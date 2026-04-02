@@ -1,0 +1,79 @@
+{
+  "project_id": "terminator_2_20260401_151738",
+  "sequence_count": 8,
+  "note": "Eight-sequence breakdown (~10–15 min each) aligned to Cameron-style momentum; IDs are stable for scene linking.",
+  "sequences": [
+    {
+      "id": "SEQ1",
+      "title": "Judgment Day prologue / arrivals",
+      "act": 1,
+      "goal": "Establish the machine war, the time-travel stakes, and both terminators acquiring transport and gear.",
+      "emotional_tone": "Nightmare future → cold procedural menace in the present",
+      "key_locations": ["Los Angeles 2029 battlefield", "Truck stop / diner", "Highway toward John"],
+      "exit_beat": "Both terminators are armed and oriented on John's world."
+    },
+    {
+      "id": "SEQ2",
+      "title": "John's world / Sarah's cage",
+      "act": 1,
+      "goal": "Introduce John as a kid leader-in-the-making; show Sarah's credibility destroyed by psychiatry; parallel hunts tighten.",
+      "emotional_tone": "Rebellious youth vs institutional horror",
+      "key_locations": ["Foster home / arcade", "Pescadero hospital"],
+      "exit_beat": "T-1000 closes on John at the mall; T-800 makes contact."
+    },
+    {
+      "id": "SEQ3",
+      "title": "Galleria showdown / escape",
+      "act": 1,
+      "goal": "First proof the new terminator is unstoppable in conventional terms; John accepts protection under fire.",
+      "emotional_tone": "Shock reveal (liquid metal) → desperate flight",
+      "key_locations": ["Shopping mall corridors", "Parking garage / storm drain"],
+      "exit_beat": "John commands the T-800 not to kill; they evade—for the moment."
+    },
+    {
+      "id": "SEQ4",
+      "title": "Pescadero breakout",
+      "act": 2,
+      "goal": "Rescue Sarah; survive the T-1000 in close quarters; reunite the trio with conflicting agendas.",
+      "emotional_tone": "Claustrophobic terror → fierce reunion",
+      "key_locations": ["Pescadero corridors", "Elevator / parking"],
+      "exit_beat": "Sarah is out but fixated on Dyson as the 'key' to Skynet."
+    },
+    {
+      "id": "SEQ5",
+      "title": "The Dyson dilemma",
+      "act": 2,
+      "goal": "Sarah tries assassination; John and the machine block her; pivot to evidence and coerced alliance.",
+      "emotional_tone": "Moral crisis → uneasy coalition",
+      "key_locations": "Dyson residence (suburban night)",
+      "exit_beat": "Dyson agrees the work must be destroyed; plan moves to Cyberdyne."
+    },
+    {
+      "id": "SEQ6",
+      "title": "Cyberdyne assault",
+      "act": 2,
+      "goal": "Enter the lab, recover future artifacts from the vault, plant charges, survive police response.",
+      "emotional_tone": "Heist-thriller → siege",
+      "key_locations": ["Cyberdyne building", "Vault", "Parking structure / minigun hallway"],
+      "exit_beat": "Building primed to burn; team extracts under heavy fire."
+    },
+    {
+      "id": "SEQ7",
+      "title": "Freeway to foundry",
+      "act": 2,
+      "goal": "Prolonged pursuit and vehicle combat; damage the T-1000; force final arena.",
+      "emotional_tone": "Exhaustion and attrition",
+      "key_locations": ["Freeway / helicopter", "Steel mill exterior"],
+      "exit_beat": "Everyone crashes toward the industrial interior for the endgame."
+    },
+    {
+      "id": "SEQ8",
+      "title": "Steel and sacrifice / coda",
+      "act": 3,
+      "goal": "Destroy the T-1000; eliminate remaining future tech; land the theme of learning and hope.",
+      "emotional_tone": "Brutal survival → grief → bittersweet peace",
+      "key_locations": ["Steel mill floor", "Molten steel pit", "Future park (alternate 2029)"],
+      "exit_beat": "Judgment Day is not inevitable; Sarah voices reframed hope."
+    }
+  ]
+}

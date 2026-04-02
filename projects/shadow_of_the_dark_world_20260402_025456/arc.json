@@ -1,0 +1,65 @@
+{
+  "project_id": "shadow_of_the_dark_world_20260402_025456",
+  "structure_model": "three_act_feature",
+  "acts": [
+    {
+      "act": 1,
+      "label": "Rescue Zelda",
+      "approx_pages_note": null,
+      "dramatic_question": "Can Link, a seemingly ordinary young man, rise to the occasion, rescue Princess Zelda, and accept his destiny as a hero, even as a larger, unknown threat looms?",
+      "summary": "Link, an ordinary young man, is telepathically contacted by Princess Zelda, who is imprisoned by the evil wizard Aghanim. After his uncle is gravely wounded attempting to rescue her, Link is entrusted with his family's sword and shield, along with the heroic lineage of Hyrule Knights. Link infiltrates Hyrule Castle, rescues Zelda, and they escape through the castle sewers to the Sanctuary. There, Zelda reveals Aghanim's ominous scheme of kidnapping maidens and tasks Link with finding the legendary Master Sword, fabled to defeat evil, guiding him towards Kakariko Village to seek the elder who can lead him to Sahasrahla.",
+      "turning_point_end": null,
+      "must_hit_beats": [
+        "Link receives an urgent telepathic plea from Princess Zelda, trapped by Aghanim in Hyrule Castle.",
+        "Link follows his uncle to the castle, witnessing his uncle's sacrifice and receiving his sword, shield, and the charge to embrace his heroic lineage.",
+        "Link infiltrates Hyrule Castle, battles basic guards, and successfully rescues Princess Zelda.",
+        "Link and Zelda escape through the castle sewers to the Sanctuary, where a Sage provides them refuge.",
+        "Zelda reveals Aghanim is kidnapping maidens, the need for the legendary Master Sword to defeat him, and directs Link to Kakariko Village to find the elder who can lead him to Sahasrahla."
+      ],
+      "midpoint_note": null
+    },
+    {
+      "act": 2,
+      "label": "The Hero's Trials and the Master Sword",
+      "approx_pages_note": "This is the longest act, encompassing Link's core journey and growth, likely spanning 60-70 pages of a 120-page screenplay.",
+      "dramatic_question": "Can Link successfully gather the legendary artifacts, prove himself worthy to wield the Master Sword, and embrace his destiny despite the increasing threat of Aghanim's plan to unleash the Dark World?",
+      "summary": "Link journeys to Kakariko Village, evading the now-possessed castle guards, and meets the Village Elder. She confirms Aghanim's sinister plans and directs Link to Sahasrahla at the Eastern Palace. After a long journey, Link meets Sahasrahla, who tasks him with proving his heroic lineage by retrieving the Pendant of Courage from the Eastern Palace. Link infiltrates the dungeon, acquires a bow and arrow, and defeats the six Armos Knights. Impressed, Sahasrahla rewards Link with the Pegasus Boots and reveals Aghanim's true aim: to open the Dark World by sacrificing the maidens. Link is then sent on a quest to gather two more pendants: Wisdom from the Desert Palace and Power from the Tower of Hera. Through an action-packed montage, Link battles sandworms and a giant fat worm, successfully acquiring both. With all three pendants, Link is guided to the sacred Lost Woods. He navigates its mystical challenges and, proving his worthiness with the pendants, draws the fabled Master Sword from its pedestal, fully embracing his destiny as the hero as the looming threat of Aghanim's ritual intensifies.",
+      "turning_point_end": null,
+      "must_hit_beats": [
+        "Link evades possessed castle guards in Kakariko Village and meets the Village Elder.",
+        "The Elder reveals more about Aghanim's evil and directs Link to Sahasrahla at the Eastern Palace.",
+        "Link journeys to the Eastern Palace and meets Sahasrahla, who challenges him to retrieve the Pendant of Courage to prove his heroic blood.",
+        "Link navigates the Eastern Palace dungeon, finding a bow and arrow, and defeats the six Armos Knights guarding the Pendant of Courage.",
+        "Sahasrahla rewards Link with the Pegasus Boots after he retrieves the pendant.",
+        "Sahasrahla reveals Aghanim's plan to open the Dark World by sacrificing the maidens, and tasks Link with finding the Pendants of Wisdom (Desert Palace) and Power (Tower of Hera).",
+        "Link embarks on a montage to acquire the Pendants of Wisdom (defeating three sandworms) and Power (defeating a giant fat worm).",
+        "With all three pendants, Link is guided to the sacred Lost Woods to claim the Master Sword.",
+        "Link navigates the mystical obstacles of the Lost Woods and, proving his worthiness, draws the Master Sword from its pedestal.",
+        "Link is imbued with new resolve and power as the Master Sword's true potential is revealed, signaling his readiness to face Aghanim."
+      ],
+      "midpoint_note": "Sahasrahla reveals Aghanim's true aim to open the Dark World and sends Link on the quest for the remaining two pendants and grants him the Pegasus Boots, escalating the stakes and Link's capabilities."
+    },
+    {
+      "act": 3,
+      "label": "Battle Aghanim and the Dark World",
+      "approx_pages_note": "This act, encompassing the climax and a major cliffhanger, will likely be around 20-30 pages of a 120-page screenplay.",
+      "dramatic_question": "Can Link defeat Aghanim, save Zelda and the other maidens, and prevent Ganon from conquering their world, even when cast into the heart of darkness?",
+      "summary": "With the three Pendants collected, Sahasrahla telepathically guides Link to the Lost Woods. There, Link finds the Master Sword embedded in a stone; the pendants activate the legendary blade, allowing him to pull it free and unleashing a wave of energy that clears the woods. Immediately, Zelda telepathically contacts Link with a desperate plea, revealing she's been found and taken back to the castle. Link races back to Hyrule Castle using his Pegasus Boots, battling an army of enchanted soldiers with his newfound sword skills. He confronts Aghanim, who is performing a ritual on a sleeping Zelda. Aghanim zaps Zelda away, revealing he has gathered all seven maidens, descendants of the ancient wise men who sealed Ganon, and plans to break the seal to unleash the dark lord upon the Light World. Link engages Aghanim in a fierce duel, deflecting fireballs with the Master Sword, eventually wounding the sorcerer. In a final act of malice, Aghanim banishes Link to the desolate, ominous Dark World, where he lands on the Great Pyramid. Sahasrahla's telepathic voice once again reaches Link, explaining that the seal is breaking and tasks him with rescuing the seven maidens, starting with one in the Dark Palace, to thwart Ganon's complete release and break the barrier to Aghanim's new lair in Ganon's Tower.",
+      "turning_point_end": "Aghanim banishes Link to the corrupted Dark World, setting the stage for a new, desperate quest as the ultimate evil, Ganon, looms large.",
+      "must_hit_beats": [
+        "Sahasrahla telepathically guides Link to the Master Sword's location in the Lost Woods.",
+        "Link finds the Master Sword; the three Pendants activate it, allowing him to pull it from the stone, which releases a wave of energy clearing the woods.",
+        "Zelda telepathically contacts Link, revealing she's been captured and taken back to Hyrule Castle.",
+        "Link races back to Hyrule Castle, using Pegasus Boots, and battles through a gauntlet of powerful, enchanted soldiers.",
+        "Link confronts Aghanim, who zaps Zelda away, having gathered all seven maidens to break Ganon's seal.",
+        "Aghanim reveals his plan to unleash Ganon from the Dark World to conquer the Light World.",
+        "Link battles Aghanim, deflecting fireballs with the Master Sword, eventually wounding the sorcerer.",
+        "Aghanim banishes Link to the Dark World.",
+        "Link lands on the Great Pyramid in the desolate Dark World.",
+        "Sahasrahla telepathically instructs Link to rescue the seven maidens (including Zelda) to break the barrier to Ganon's Tower, guiding him to the first maiden in the Dark Palace."
+      ],
+      "midpoint_note": null
+    }
+  ],
+  "series_thread": null
+}

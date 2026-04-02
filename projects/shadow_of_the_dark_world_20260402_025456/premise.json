@@ -1,0 +1,51 @@
+{
+  "project_id": "shadow_of_the_dark_world_20260402_025456",
+  "title": "Shadow of the Dark World",
+  "writers": [
+    "TBD"
+  ],
+  "source_script": null,
+  "format_notes": "Awesome-O generated this from a CLI chat.",
+  "logline": "A seemingly ordinary young man, Link, is thrust into a perilous quest after his uncle is gravely wounded rescuing Princess Zelda. He must gather legendary artifacts, wield the fabled Master Sword, and confront a malevolent wizard to prevent the dark lord Ganon's release and the conquest of their world.",
+  "genre": [
+    "fantasy",
+    "action",
+    "adventure"
+  ],
+  "themes": [
+    "hero's journey",
+    "destiny",
+    "courage in the face of overwhelming evil",
+    "good versus evil",
+    "sacrifice"
+  ],
+  "central_conflict": "Link's race against time to understand and embrace his role as a hero, stopping the sorcerer Aghanim from sacrificing Princess Zelda and six other maidens, a ritual that would unleash the ancient evil Ganon from the corrupted Dark World upon the Light World.",
+  "setting": {
+    "primary_time": "High fantasy era, contemporary-feel for characters",
+    "primary_places": [
+      "Hyrule Castle",
+      "Kakariko Village",
+      "Eastern Palace",
+      "Lost Woods",
+      "Dark World"
+    ]
+  },
+  "protagonists": [
+    {
+      "name": "Link",
+      "role": "Unassuming hero, destined to wield the Master Sword",
+      "want": "To save his uncle, rescue Zelda, and ultimately prevent Aghanim and Ganon from destroying Hyrule."
+    }
+  ],
+  "key_antagonist": {
+    "name": "Aghanim",
+    "role": "Evil sorcerer, Ganon's pawn",
+    "want": "To seal the seven maidens, including Princess Zelda, to open a portal to the Dark World and release Ganon."
+  },
+  "key_ally": {
+    "name": "Sahasrahla",
+    "role": "Village elder, wise man, guide",
+    "want": "To guide Link to acquire the Master Sword and stop Aghanim's plans to release Ganon."
+  },
+  "stakes": "The total conquest of the Light World by the dark lord Ganon, resulting in the enslavement or destruction of its inhabitants."
+}

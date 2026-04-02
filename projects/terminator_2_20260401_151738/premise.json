@@ -1,0 +1,47 @@
+{
+  "project_id": "terminator_2_20260401_151738",
+  "title": "Terminator 2: Judgment Day",
+  "writers": ["James Cameron", "William Wisher"],
+  "source_script": "script_terminator_2.txt",
+  "format_notes": "Baseline extracted from revised final shooting script; for Awesome-O agent pipelines.",
+  "logline": "A reprogrammed Terminator must protect young John Connor from a shape-shifting liquid-metal assassin sent from the future—while John's mother, Sarah, wages her own war to stop the invention that creates Skynet.",
+  "genre": ["science_fiction", "action", "thriller"],
+  "themes": [
+    "Fate versus choice; rewriting the future",
+    "What makes someone human (empathy, learning, sacrifice)",
+    "Maternal ferocity and trauma after survival",
+    "Technology as neutral—intent and stewardship matter"
+  ],
+  "central_conflict": "Prevent John Connor's assassination in the present while deciding whether to destroy the technology that will cause Judgment Day—and whether a machine can be trusted as family.",
+  "setting": {
+    "primary_time": "1995 (present story); 2029 (prologue / alternate future bookends)",
+    "primary_places": [
+      "Los Angeles metro area",
+      "Mojave desert / highway corridor",
+      "Cyberdyne Systems (fictional corporate campus)",
+      "Pescadero State Hospital for the Criminally Insane",
+      "Steel mill (climax)"
+    ]
+  },
+  "protagonists": [
+    {
+      "name": "Sarah Connor",
+      "role": "Mother of John; traumatized warrior preparing him for war",
+      "want": "Stop Judgment Day and protect John; control what she cannot predict"
+    },
+    {
+      "name": "John Connor",
+      "role": "Pre-teen future leader; moral compass for the group",
+      "want": "Survive; refuse to become only a weapon; teach the machine humanity"
+    }
+  ],
+  "key_antagonist": {
+    "name": "T-1000 (liquid metal terminator)",
+    "role": "Skynet assassin impersonating humans; relentless pursuit"
+  },
+  "key_ally": {
+    "name": "Terminator (Series 800, reprogrammed)",
+    "role": "Protector; starts as tool, becomes surrogate father figure through John's teaching"
+  },
+  "stakes": "If John dies, humanity loses the Resistance leader; if Skynet's path stays unchanged, nuclear war and machine rule follow."
+}

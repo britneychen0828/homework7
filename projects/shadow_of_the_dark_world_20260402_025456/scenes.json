@@ -1,0 +1,1831 @@
+{
+  "project_id": "shadow_of_the_dark_world_20260402_025456",
+  "source_script": null,
+  "note": null,
+  "slug_count": 32,
+  "scenes": [
+    {
+      "id": "S0001",
+      "slug_id": "SEQ1-01",
+      "slugline": "INT. LINK'S HOME - NIGHT",
+      "line_start": null,
+      "sequence_id": "SEQ1",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "A soft glow from a nearby lantern casts long shadows across the simple, familiar room. LINK, a young man with a kind face, sleeps soundly in his bed."
+        },
+        {
+          "kind": "action",
+          "text": "Suddenly, a piercing, desperate WHISPER echoes in his mind, not heard through his ears, but felt deep in his skull."
+        },
+        {
+          "kind": "action",
+          "text": "He jolts awake, eyes wide, disoriented. The whisper intensifies, forming words."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA (V.O.)",
+          "lines": [
+            "Link... help me... I'm trapped in the castle... Aghanim... has me..."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link clutches his head, a jolt of pain, as visions flash through his mind: the cold stone walls of HYRULE CASTLE, Princess ZELDA's terrified face, the menacing silhouette of a SORCERER."
+        },
+        {
+          "kind": "action",
+          "text": "He tumbles from his bed, landing hard on the wooden floor. The telepathic plea is overwhelming."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA (V.O.)",
+          "lines": [
+            "He's closing the portal... the maidens..."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "The bedroom door bursts open. Link's UNCLE, a burly, weathered man, stands silhouetted against the dim hall light, already clad in simple armor, sword and shield in hand. His face is grim."
+        },
+        {
+          "kind": "dialogue",
+          "character": "UNCLE",
+          "lines": [
+            "Link, stay here. Under no circumstances are you to leave the house."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link scrambles to his feet, fear and confusion warring in his eyes."
+        },
+        {
+          "kind": "dialogue",
+          "character": "LINK",
+          "lines": [
+            "Uncle, what... what's happening? I heard--"
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "dialogue",
+          "character": "UNCLE",
+          "lines": [
+            "I know what you heard. Be strong. This is my fight. Protect the house. Promise me."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Before Link can fully process it, his Uncle is gone, rushing out into the moonless night. The heavy door THUDS shut behind him."
+        },
+        {
+          "kind": "action",
+          "text": "Link is left alone in the echoing silence, the chilling memory of Zelda's voice and the image of his uncle's determined departure burning in his mind."
+        }
+      ]
+    },
+    {
+      "id": "S0002",
+      "slug_id": "SEQ1-02",
+      "slugline": "EXT. HYRULE CASTLE - OUTER WALLS - NIGHT",
+      "line_start": null,
+      "sequence_id": "SEQ1",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Ignoring his uncle's stern command, LINK bursts from his home, the cold night air hitting his face. Zelda's desperate whisper still echoes, fainter now, but urging him forward. He runs, a frantic pace, towards the imposing silhouette of Hyrule Castle."
+        },
+        {
+          "kind": "action",
+          "text": "He skirts the edge of the castle grounds, coming to a halt behind a thicket of bushes. Ahead, near a partially opened gate in the outer wall, his UNCLE is locked in a fierce battle with two ARMORED GUARDS."
+        },
+        {
+          "kind": "action",
+          "text": "His uncle, a seasoned fighter, holds his own for a moment, but a second guard lunges from the shadows, striking a heavy blow to his side. His uncle CRYS OUT, dropping to one knee."
+        },
+        {
+          "kind": "action",
+          "text": "Link’s heart seizes. He hesitates, fear gripping him, but then a surge of protective fury propels him forward."
+        },
+        {
+          "kind": "action",
+          "text": "He rushes to his uncle's side, shielding him from the advancing guards who pause, surprised by his sudden appearance."
+        },
+        {
+          "kind": "dialogue",
+          "character": "UNCLE",
+          "lines": [
+            "Link... no..."
+          ],
+          "parenthetical": "(gasping)"
+        },
+        {
+          "kind": "action",
+          "text": "His uncle pushes his sword and shield into Link's trembling hands. The metal is cold, heavy."
+        },
+        {
+          "kind": "dialogue",
+          "character": "UNCLE",
+          "lines": [
+            "Take them... Zelda... you must..."
+          ],
+          "parenthetical": "(weakly)"
+        },
+        {
+          "kind": "action",
+          "text": "His uncle's eyes, filled with a mixture of pain and desperate hope, lock onto Link's before his body goes limp, slumping against the cold stone wall. The guards ready themselves, closing in."
+        },
+        {
+          "kind": "action",
+          "text": "Link stares at his fallen uncle, then at the sword and shield he now holds. The weight of them, of his uncle's sacrifice, settles on his shoulders. He looks up at the towering castle, a determined, sorrowful resolve hardening his gaze."
+        }
+      ]
+    },
+    {
+      "id": "S0003",
+      "slug_id": "SEQ1-03",
+      "slugline": "EXT. HYRULE CASTLE - OUTER WALLS - CONTINUOUS",
+      "line_start": null,
+      "sequence_id": "SEQ1",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link clutches the cold hilt of the sword, the shield heavy on his arm. The two ARMORED GUARDS, momentarily startled, advance on him. He sees his uncle's still form, and the grief turns to a burning resolve."
+        },
+        {
+          "kind": "action",
+          "text": "He doesn't have time to mourn. Not yet. He parries a clumsy strike from the first guard, the sword feeling foreign but surprisingly light in his grip. The clang of steel on steel echoes in the night."
+        },
+        {
+          "kind": "action",
+          "text": "The second guard lunges. Link ducks under the attack, instinctively raising the shield to deflect a blow that would have connected with his head. He shoves the shield forward, throwing the guard off balance."
+        },
+        {
+          "kind": "action",
+          "text": "Seeing an opening, Link sprints through the partially opened gate his uncle had fought to open. He glances back for a second, seeing the guards recover, but he is already inside the outer wall, the castle looming even larger."
+        },
+        {
+          "kind": "action",
+          "text": "He pushes deeper into the castle grounds, the vast, shadowed courtyards and imposing towers now surrounding him. Princess Zelda's faint plea echoes in his memory, driving him onward. He is no longer just Link, the ordinary young man; he is Link, the one who must save her."
+        }
+      ]
+    },
+    {
+      "id": "S0004",
+      "slug_id": "SEQ1-04",
+      "slugline": "EXT. HYRULE CASTLE - COURTYARD - NIGHT",
+      "line_start": null,
+      "sequence_id": "SEQ1",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link moves cautiously through the deserted outer COURTYARD of Hyrule Castle, the massive stone walls towering over him like silent sentinels. He keeps to the shadows, his uncle's sword feeling heavy yet comforting in his hand, the shield resting on his arm."
+        },
+        {
+          "kind": "action",
+          "text": "He pauses behind a crumbling statue, catching his breath. The image of his uncle falling, his last words echoing in Link's mind, brings a fresh wave of sorrow. But beneath it, a nascent strength begins to burn."
+        },
+        {
+          "kind": "action",
+          "text": "He glances up at the main castle structure. Light spills from a few high windows, but a less conspicuous service entrance, slightly ajar, catches his eye on a lower level."
+        },
+        {
+          "kind": "action",
+          "text": "He looks down at the sword, then at the shield. These are not just weapons; they are a legacy, a promise. His jaw tightens, his young face etched with a newfound resolve."
+        },
+        {
+          "kind": "action",
+          "text": "Taking a deep, steadying breath, Link grips the sword tighter. He is no longer just a boy. He is the one who will save Zelda. He moves purposefully towards the partially open door, ready to face whatever lies within."
+        }
+      ]
+    },
+    {
+      "id": "S0005",
+      "slug_id": "SEQ2-01",
+      "slugline": "INT. HYRULE CASTLE - SERVICE CORRIDOR - NIGHT",
+      "line_start": null,
+      "sequence_id": "SEQ2",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link slips through the slightly ajar service entrance, the heavy door groaning shut behind him with a dull THUD. He finds himself in a cramped, poorly lit service corridor, the air damp and smelling faintly of stale stone."
+        },
+        {
+          "kind": "action",
+          "text": "He moves with cautious steps, his uncle's sword held ready. The silence is unnerving, broken only by the drip of water from unseen pipes."
+        },
+        {
+          "kind": "action",
+          "text": "Around a bend, two CASTLE GUARDS stand at ease, their backs to him, chatting idly. They carry spears, their armor gleaming dully in the dim light."
+        },
+        {
+          "kind": "action",
+          "text": "Link presses himself against the wall, heart pounding. He's never fought more than a practice dummy. This is real."
+        },
+        {
+          "kind": "action",
+          "text": "He takes a deep breath, recalling his uncle's movements in the brief fight outside. He can't afford to be seen. He spots a stack of crates nearby."
+        },
+        {
+          "kind": "action",
+          "text": "Using the crates for cover, Link stealthily navigates past the unsuspecting guards, his movements surprisingly agile for someone so inexperienced. He manages to slip into a wider, main hallway without being detected."
+        }
+      ]
+    },
+    {
+      "id": "S0006",
+      "slug_id": "SEQ2-02",
+      "slugline": "INT. HYRULE CASTLE - MAIN HALLWAY - NIGHT",
+      "line_start": null,
+      "sequence_id": "SEQ2",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link moves through the main hallway, the sounds of his soft footsteps echoing in the vast, opulent space. Tapestries depicting Hyrulean history hang from the high walls, lending an air of ancient power to the castle."
+        },
+        {
+          "kind": "action",
+          "text": "Up ahead, two ARMORED GUARDS turn a corner, their heavy boots CLANKING loudly on the polished stone floor. They spot Link instantly, raising their spears."
+        },
+        {
+          "kind": "action",
+          "text": "Link braces himself, his uncle's sword feeling heavier now. The guards charge, their war cries guttural. He meets the first one head-on, deflecting a spear thrust with his shield, the impact jarring his arm."
+        },
+        {
+          "kind": "action",
+          "text": "He swings the sword, a clumsy but determined strike that catches the guard in the shoulder. The guard stumbles back, momentarily stunned. The second guard lunges, but Link ducks, parrying another blow."
+        },
+        {
+          "kind": "action",
+          "text": "With a surge of adrenaline, Link pushes forward, disarming the first guard and forcing him to retreat. The second guard, seeing his comrade fall back, hesitates. Link doesn't give him a chance, pressing his advantage until both guards are neutralized, their forms slumped against the wall."
+        },
+        {
+          "kind": "action",
+          "text": "Breathing heavily, Link glances at the fallen guards. He'd done it. A flicker of triumph mixes with the lingering fear."
+        },
+        {
+          "kind": "action",
+          "text": "He pushes deeper, following the fainter echo of Zelda's telepathic plea, which now seems to emanate from a specific direction. He arrives at a heavy, ornate wooden door, flanked by two unlit torches."
+        },
+        {
+          "kind": "action",
+          "text": "He tests the door. Locked. But he notices a small, intricate mechanism near the handle. Recalling a trick his uncle taught him about old locks, he uses the tip of his sword to prod at the mechanism."
+        },
+        {
+          "kind": "action",
+          "text": "With a soft CLICK, the heavy door swings inward. Inside, a dimly lit, austere chamber. Princess ZELDA sits on a stone bench, her wrists bound by magical, glowing cuffs, her face pale but her eyes widening as she sees him."
+        },
+        {
+          "kind": "action",
+          "text": "He rushes to her side, examining the cuffs."
+        },
+        {
+          "kind": "action",
+          "text": "ZELDA"
+        },
+        {
+          "kind": "action",
+          "text": "Link! You came!"
+        },
+        {
+          "kind": "action",
+          "text": "Link uses his sword to pry at the cuffs, the metal resisting."
+        }
+      ]
+    },
+    {
+      "id": "S0007",
+      "slug_id": "SEQ2-03",
+      "slugline": "INT. HYRULE CASTLE - ZELDA'S CHAMBER / SEWERS - NIGHT",
+      "line_start": null,
+      "sequence_id": "SEQ2",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link strains, his sword scraping uselessly against the glowing cuffs on ZELDA's wrists. The magic pulsates, resisting his efforts."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "It's no use, Link. These are enchanted. Only powerful magic can break them, or... a specific kind of resonance."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "She glances at his uncle's sword, then back to Link's determined face."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "The legend says a hero's blade, touched by courage... the true blade of the Knights of Hyrule... can disrupt such enchantments."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link looks at the sword in his hand, then at the glowing cuffs. He takes a deep breath, focusing his intent, channeling his burgeoning courage. He brings the flat of the blade down onto the cuffs with a deliberate, steady force."
+        },
+        {
+          "kind": "action",
+          "text": "A CRACKLE of energy. The glowing cuffs SHATTER, falling away into dust. Zelda rubs her wrists, a grateful smile touching her lips."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Thank you. We must move. Aghanim's guards will be here soon."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "A distant CLANG of armor echoes from the hallway. Link's eyes widen. He clutches his sword tighter."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "There's a secret passage in the old sewers below. It's dangerous, but it's our only way out without being seen."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Zelda leads him to a hidden grate in the corner of the chamber, cleverly disguised as part of the floor. With a grunt, Link pries it open, revealing a dark, dank tunnel leading down."
+        },
+        {
+          "kind": "action",
+          "text": "He looks back at the chamber, then at Zelda, who gestures for him to go first. He descends into the darkness, the metallic scent of damp stone and stagnant water filling his nostrils. Zelda quickly follows, pulling the grate shut behind them with a soft SCRAPE."
+        },
+        {
+          "kind": "action",
+          "text": "They navigate the cramped, winding HYRULE CASTLE SEWERS. The air is heavy, and unseen water DRIPS and SLOSHES around them. Link keeps his sword drawn, constantly scanning the shadows."
+        }
+      ]
+    },
+    {
+      "id": "S0008",
+      "slug_id": "SEQ2-04",
+      "slugline": "INT. SANCTUARY - NIGHT",
+      "line_start": null,
+      "sequence_id": "SEQ2",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda clamber out of a hidden grate, covered in grime and reeking of stagnant water. They find themselves in a small, circular SANCTUARY, lit by a single, flickering CANDLE. Ancient, weathered tapestries depicting heroic deeds line the walls."
+        },
+        {
+          "kind": "action",
+          "text": "A sense of peace, however fleeting, settles over them after the tense escape. Zelda glances at Link, her expression heavy with unspoken urgency."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Link, Aghanim isn't just seeking power for himself. He's kidnapping maidens from across Hyrule. Seven of them."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link's brow furrows, the weight of her words settling on him. He remembers Zelda's fragmented telepathic plea."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "They are descendants of the ancient wise men who sealed Ganon away centuries ago. If he sacrifices them, he will break that seal, and Ganon... the Dark Lord himself... will be unleashed."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "A chill runs down Link's spine. This is far more dangerous than he imagined."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Only one weapon can defeat Aghanim and prevent Ganon's return: the legendary Master Sword. It's fabled to rest in a sacred grove, but only a true hero can wield it."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "She looks at the sword in his hand, then meets his gaze."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "You must find it, Link. Go to Kakariko Village. Seek out the elder there. She will know how to guide you to Sahasrahla. He is the last hope."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link clutches his uncle's sword, his eyes fixed on Zelda. The task is monumental, terrifying. But he sees the fear in her eyes, and a quiet determination hardens his own. He nods, accepting his destiny."
+        }
+      ]
+    },
+    {
+      "id": "S0009",
+      "slug_id": "SEQ3-01",
+      "slugline": "EXT. ROAD TO KAKARIKO VILLAGE - DAWN",
+      "line_start": null,
+      "sequence_id": "SEQ3",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda slip out of the Sanctuary, the heavy wooden door closing softly behind them. The first light of dawn paints the eastern sky in pale oranges and purples, but the air still holds the chill of night."
+        },
+        {
+          "kind": "action",
+          "text": "They find themselves on a narrow, overgrown path, far from the well-trodden roads. The forest presses in on either side, silent and watchful."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "We need to be careful, Link. Aghanim's influence spreads quickly. His guards will be searching."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link grips his uncle's sword tighter, scanning the treeline. The peaceful morning light feels like a thin veil over a world suddenly filled with unseen dangers. He nods, his resolve firm."
+        },
+        {
+          "kind": "action",
+          "text": "They move quickly, quietly, through the winding path. Every rustle of leaves, every distant bird call, makes Link's heart race. The open road ahead, usually a symbol of freedom, now feels exposed."
+        },
+        {
+          "kind": "action",
+          "text": "After some time, Zelda spots something in the distance. A faint GLINT of metal. She pulls Link behind a thick cluster of bushes, pressing herself low. Link peers through the foliage."
+        },
+        {
+          "kind": "action",
+          "text": "A patrol of three CASTLE GUARDS, their armor glinting, moves along a more prominent road further off. They seem to be sweeping the area, their gazes sharp. Link holds his breath as they pass by, thankfully not spotting them."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "See? They're everywhere. Kakariko Village isn't far, but we must reach it unseen. It's our best chance for answers."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link nods, the weight of their precarious journey pressing in. He glances at Zelda, then back at the path ahead, taking the lead with renewed caution. The journey has truly begun."
+        }
+      ]
+    },
+    {
+      "id": "S0010",
+      "slug_id": "SEQ3-02",
+      "slugline": "EXT. KAKARIKO VILLAGE - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ3",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda, weary but resolute, emerge from the dense woods onto a low ridge. Below them, KAKARIKO VILLAGE sprawls out, a collection of humble homes and shops nestled by a calm river. The morning sun now bathes the village in a warm light, but an unnatural quiet hangs in the air."
+        },
+        {
+          "kind": "action",
+          "text": "They scan the scene. Fewer villagers are in the streets than expected for this time of day. A small contingent of CASTLE GUARDS, easily identifiable by Aghanim's crest, patrol the main thoroughfare, their presence a stark contrast to the normally bustling village."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "They're here already. Aghanim's reach is wider than I feared."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link tightens his grip on his sword, his gaze hardening. They can't just walk in."
+        },
+        {
+          "kind": "action",
+          "text": "Zelda points to a narrow, overgrown path winding along the riverbank, circumventing the main entrance."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "There. An old smuggler's route. It should lead us to the village's quieter side, near the old mill. We can find a way in there."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "They descend the ridge, moving with renewed stealth, following the hidden path. The sounds of the river rush softly, masking their footsteps. Soon, they slip between two dilapidated shacks, entering the village proper through an unassuming alleyway."
+        },
+        {
+          "kind": "action",
+          "text": "Inside, the tension is palpable. Villagers dart between homes, their eyes wide with fear, avoiding the patrolling guards. Link and Zelda press themselves against the shadowed walls, observing, their objective clear: find the Elder without drawing attention."
+        }
+      ]
+    },
+    {
+      "id": "S0011",
+      "slug_id": "SEQ3-03",
+      "slugline": "INT. KAKARIKO VILLAGE - ELDER'S HOME - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ3",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda weave through the narrow, less-patrolled back alleys of Kakariko Village. The vibrant market stalls are unusually quiet, and the few villagers they see move with a hurried, anxious air. The presence of Aghanim's guards is a constant, oppressive shadow."
+        },
+        {
+          "kind": "action",
+          "text": "Zelda points to a small, unassuming cottage, its thatch roof slightly askew, nestled at the very edge of the village, away from the main thoroughfare."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "That's where the Elder lives. It's usually bustling with activity, but..."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim's patrols make a sweep down a nearby lane, their heavy boots THUDDING on the cobblestones. Link and Zelda duck behind a stack of firewood, holding their breath."
+        },
+        {
+          "kind": "action",
+          "text": "Once the guards pass, they cautiously approach the cottage. The door is slightly ajar. Link pushes it open gently, revealing a dimly lit interior. The air inside smells of dried herbs and old parchment."
+        },
+        {
+          "kind": "action",
+          "text": "An elderly woman, THE VILLAGE ELDER, sits by a crackling hearth, her back to them, stirring a small pot. She has a wise, weathered face, etched with the stories of many years. She doesn't seem surprised by their entrance."
+        },
+        {
+          "kind": "dialogue",
+          "character": "VILLAGE ELDER",
+          "lines": [
+            "I expected you.",
+            "The whispers of a princess in distress, and a young man with courage in his eyes, reach even this quiet corner."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link and Zelda exchange a glance, both relieved and wary. The Elder turns, her eyes, though ancient, are sharp and knowing."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Elder, we need your help. Aghanim... his power grows."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "The Elder nods slowly, a grave expression settling on her face."
+        },
+        {
+          "kind": "dialogue",
+          "character": "VILLAGE ELDER",
+          "lines": [
+            "Indeed. His shadow stretches even here. He seeks not just control, but something far more ancient, more terrible. The disappearances... they are not random."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link feels a cold knot in his stomach. The Elder's words confirm Zelda's worst fears."
+        },
+        {
+          "kind": "dialogue",
+          "character": "VILLAGE ELDER",
+          "lines": [
+            "You seek answers, and you seek a path. The path to Sahasrahla, I presume."
+          ],
+          "parenthetical": null
+        }
+      ]
+    },
+    {
+      "id": "S0012",
+      "slug_id": "SEQ3-04",
+      "slugline": "INT. KAKARIKO VILLAGE - ELDER'S HOME - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ3",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "The VILLAGE ELDER's gaze is steady, penetrating, as if seeing into Link's very soul."
+        },
+        {
+          "kind": "dialogue",
+          "character": "VILLAGE ELDER",
+          "lines": [
+            "Yes. Sahasrahla is a keeper of ancient knowledge, a descendant of the Sages who first sealed Ganon. He can guide you, Link, to the Master Sword."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link feels a surge of both hope and immense pressure. The weight of Hyrule's fate now rests on his inexperienced shoulders."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Where can we find him, Elder? Aghanim's forces are everywhere."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "dialogue",
+          "character": "VILLAGE ELDER",
+          "lines": [
+            "Sahasrahla resides within the EASTERN PALACE, deep in the desert lands to the east. It is a perilous journey, and the palace itself is no longer safe. Aghanim has claimed it as a staging ground for his vile rituals."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim's sinister plan becomes clearer to Link. The kidnapping of maidens, the ancient seal, Ganon... the Eastern Palace must be crucial."
+        },
+        {
+          "kind": "dialogue",
+          "character": "VILLAGE ELDER",
+          "lines": [
+            "You must be swift, young hero. The ritual draws near. Go, Link. Sahasrahla awaits."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link nods, a quiet determination hardening his features. He looks at Zelda, then back at the Elder, who offers a small, encouraging smile."
+        },
+        {
+          "kind": "action",
+          "text": "He clutches his sword, already envisioning the long, dangerous road ahead. The Eastern Palace. His next step towards the Master Sword, and stopping Aghanim."
+        }
+      ]
+    },
+    {
+      "id": "S0013",
+      "slug_id": "SEQ4-01",
+      "slugline": "EXT. KAKARIKO VILLAGE / EASTERN PALACE ROAD - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ4",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda, their determination palpable, slip away from Kakariko Village under the morning sun. The Elder's words echo in their minds: *Eastern Palace. Sahasrahla awaits.* The path leading east is less trodden, quickly becoming a dusty trail that winds through arid plains."
+        },
+        {
+          "kind": "action",
+          "text": "The landscape transforms. Lush greens give way to sun-baked earth, sparse, thorny bushes, and jagged rock formations. The air grows hot and dry, a stark contrast to the familiar forests of Hyrule. Link, ever vigilant, scans the horizon, his hand instinctively resting on the hilt of his uncle's sword."
+        },
+        {
+          "kind": "action",
+          "text": "ZELDA"
+        },
+        {
+          "kind": "action",
+          "text": "Are you certain, Link? This path... it feels desolate."
+        },
+        {
+          "kind": "action",
+          "text": "ZELDA"
+        },
+        {
+          "kind": "action",
+          "text": "Are you certain, Link? This path... it feels desolate."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Are you certain, Link? This path... it feels desolate."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link nods, pushing aside his own misgivings. There's no turning back. They press on, the sun climbing higher, casting long, stark shadows."
+        },
+        {
+          "kind": "action",
+          "text": "Hours pass. The journey is arduous, marked by the vast, unyielding landscape. Finally, through a shimmering heat haze, a colossal structure emerges on the horizon – the EASTERN PALACE. Its ancient, weathered stone rises majestically from the desert, a formidable beacon of their quest."
+        },
+        {
+          "kind": "action",
+          "text": "As they draw nearer, Link spots a lone figure waiting patiently near the palace's immense, crumbling entrance. An old man with a long, flowing white beard and ornate robes, SAHASRAHLA, stands with an air of quiet wisdom. He gazes directly at them, as if he knew exactly when they would arrive."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "Welcome, Link. And Princess Zelda. I have been expecting you."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Sahasrahla's voice is calm, yet carries a profound authority. Link feels a strange sense of both relief and intensified purpose as he stands before the legendary elder."
+        }
+      ]
+    },
+    {
+      "id": "S0014",
+      "slug_id": "SEQ4-02",
+      "slugline": "EXT. EASTERN PALACE - COURTYARD - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ4",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Sahasrahla, his eyes ancient and knowing, studies Link and Zelda. The vast, weather-beaten stones of the Eastern Palace loom behind him, silent and imposing. The air hums with unspoken history."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "Princess Zelda, your plight is known to me.",
+            "And Link, the prophecies speak of a hero who would rise in Hyrule's darkest hour. The blood of the Knights of Hyrule runs strong within you."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link shifts, a mix of awe and discomfort at the weight of Sahasrahla's words. Zelda steps forward, her voice urgent."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Elder, Aghanim's power grows by the day. He seeks to break the ancient seal, to unleash Ganon. We need the Master Sword."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "Indeed. The Master Sword is the only blade capable of defeating true evil. But it is not a weapon easily wielded. It demands courage, wisdom, and power, embodied in three sacred Pendants."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Sahasrahla gestures towards the imposing entrance of the Eastern Palace."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "The first of these, the Pendant of Courage, lies within these very walls. Aghanim has twisted this sacred place into a den of his creatures, a trial for any who dare seek what lies within."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link looks from Sahasrahla to the dark archway of the palace. The prospect is daunting, but a resolve hardens in his eyes. He grips the hilt of his uncle's sword."
+        },
+        {
+          "kind": "dialogue",
+          "character": "LINK",
+          "lines": [
+            "I will retrieve it."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Sahasrahla offers a small, approving nod. The challenge has been accepted. Link takes a deep breath, his gaze fixed on the shadowed entrance, preparing to face his first true test as Hyrule's hero."
+        }
+      ]
+    },
+    {
+      "id": "S0015",
+      "slug_id": "SEQ4-03",
+      "slugline": "INT. EASTERN PALACE - ENTRANCE HALL - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ4",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link stands before the colossal, shadowed entrance of the Eastern Palace. Sahasrahla and Zelda watch, a silent, weighty expectation in the air. The vast archway yawns like the maw of some ancient beast, promising danger."
+        },
+        {
+          "kind": "action",
+          "text": "He grips his uncle's sword, its familiar weight a small comfort against the daunting task ahead. He glances back at Zelda, who offers a brave, encouraging smile."
+        },
+        {
+          "kind": "action",
+          "text": "With a deep breath, Link steps across the threshold, entering the Eastern Palace. The light from outside is immediately swallowed, plunging him into a cavernous ENTRANCE HALL. Dust motes dance in the few shafts of light that pierce the gloom from high, narrow windows."
+        },
+        {
+          "kind": "action",
+          "text": "Ancient tapestries, once vibrant, now hang in tattered remnants from the high walls, depicting forgotten heroes and battles. The air is cold, stale, and carries the faint, unsettling scent of decay and something else... something dark."
+        },
+        {
+          "kind": "action",
+          "text": "Suddenly, a low GROAN echoes through the hall. From the deeper shadows of a crumbling corridor, two ARMOS, stone sentinels animated by dark magic, lumber to life. Their eyes glow with an ominous, purple light, and they shamble towards Link."
+        },
+        {
+          "kind": "action",
+          "text": "Link draws his sword, the metallic SCRAPE loud in the sudden silence. His heart pounds, but a surge of adrenaline sharpens his senses. This is his first true test."
+        },
+        {
+          "kind": "action",
+          "text": "He dodges a slow, sweeping attack from the first Armos, the heavy stone fist CRACKING against the ancient floor where he'd just stood. He rolls, coming up swiftly, and aims a precise thrust at a glowing glyph on its chest—the only vulnerable spot."
+        },
+        {
+          "kind": "action",
+          "text": "His blade connects, a shower of SPARKS erupting as the glyph FLARES. The Armos shudders, its movements becoming sluggish before it finally collapses into a pile of inert stone. The second Armos is already upon him."
+        },
+        {
+          "kind": "action",
+          "text": "Link parries another clumsy strike with his shield, the impact jarring his arm, but holding firm. He circles, looking for his opening, the challenge of the palace now fully upon him."
+        }
+      ]
+    },
+    {
+      "id": "S0016",
+      "slug_id": "SEQ4-04",
+      "slugline": "INT. EASTERN PALACE - DUNGEON - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ4",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link dodges the second Armos's clumsy strike, the ancient stone hand scraping loudly against the floor. He uses the momentum to pivot, finding the glowing glyph on its chest. With a grunt, he thrusts his sword forward."
+        },
+        {
+          "kind": "action",
+          "text": "The blade connects with a flash of light and a high-pitched WHINE. The Armos shudders violently, its purple eyes flickering before it crumbles into a pile of inert stones, joining its fallen comrade."
+        },
+        {
+          "kind": "action",
+          "text": "Link stands amidst the debris, breathing heavily, the adrenaline still coursing through him. He surveys the silent hall, his gaze hardening with resolve. This is just the beginning."
+        },
+        {
+          "kind": "action",
+          "text": "He pushes deeper into the Eastern Palace, the massive stone doors of the ENTRANCE HALL closing silently behind him, sealing him within. The air grows heavier, colder. Ahead, a long, torch-lit corridor stretches into the gloom, hinting at untold trials."
+        },
+        {
+          "kind": "action",
+          "text": "Link grips his sword, his determination a fierce flame against the encroaching darkness. Sahasrahla's words echo in his mind, the challenge to retrieve the Pendant of Courage, to prove his heroic lineage. This dungeon, with all its dangers, is the crucible."
+        },
+        {
+          "kind": "action",
+          "text": "He presses on, a lone figure moving with unwavering purpose into the depths of the Eastern Palace, ready to face whatever lies ahead."
+        }
+      ]
+    },
+    {
+      "id": "S0017",
+      "slug_id": "SEQ5-01",
+      "slugline": "INT. EASTERN PALACE - DUNGEON - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ5",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link pushes deeper into the Eastern Palace dungeon, the ancient stone labyrinth unfolding before him. Gloom clings to every corner, interrupted only by the sporadic flicker of magical torches. Traps spring from the floor, and dart-firing statues LINE THE WALLS, forcing Link to move with swift precision. He dodges a tripwire, then deflects a volley of darts with his shield, the impacts reverberating through his arm."
+        },
+        {
+          "kind": "action",
+          "text": "He navigates a crumbling walkway over a CHASM, the wind WHISTLING through unseen vents, threatening to unbalance him. His focus is absolute, his movements growing more confident with each challenge overcome."
+        },
+        {
+          "kind": "action",
+          "text": "In a forgotten alcove, behind a shattered illusion of a wall, Link discovers a carved STONE CHEST. With a grunt, he forces it open. Inside, nestled on a velvet cushion, is a sleek, ancient BOW and a QUIVER full of shimmering arrows. A new tool for his burgeoning arsenal."
+        },
+        {
+          "kind": "action",
+          "text": "Just as he pockets the new weapon, a low RUMBLE echoes. The ground SHAKES. Link looks up, his eyes widening. Ahead, in a vast, circular chamber, SIX IMMENSE ARMOS KNIGHTS, far larger and more heavily armored than the sentinels he previously faced, lumber to life. Their glowing purple eyes fix on him simultaneously."
+        },
+        {
+          "kind": "action",
+          "text": "Link draws his uncle's sword, but the sheer number of foes is overwhelming. Their heavy STONE FISTS CRACK against the ground, sending shockwaves through the chamber. He dodges, rolls, and parries, but he can't get close enough to strike their vital glyphs without being cornered."
+        },
+        {
+          "kind": "action",
+          "text": "Then, an idea. He reaches for his newly acquired BOW. He nocks an arrow, the smooth wood feeling surprisingly natural in his grip. He takes aim, not at their chests, but at the GEM-LIKE ORBS embedded in their helmets—a secondary weakness, less obvious but perhaps just as effective."
+        },
+        {
+          "kind": "action",
+          "text": "He fires. The arrow flies true, striking the first Armos Knight's helmet orb. The gem FLARES with purple light, and the knight stumbles, momentarily stunned. Link seizes the opening, rushing in with his sword to strike the chest glyph."
+        },
+        {
+          "kind": "action",
+          "text": "A CRACK. The first Armos Knight falls. Link repeats the tactic, firing arrows to stun, then closing in for the finishing blow. He moves with newfound agility, a dance of steel and projectile, slowly but surely taking down the gargantuan foes. Each fall is a testament to his growing prowess."
+        },
+        {
+          "kind": "action",
+          "text": "Finally, the last Armos Knight CRUMBLES into dust. Link stands panting amidst the wreckage, a thin sheen of sweat on his brow, but a triumphant glint in his eyes. He has faced a formidable challenge and emerged victorious."
+        },
+        {
+          "kind": "action",
+          "text": "Beyond the scattered debris, in the center of the now-silent chamber, an ornate pedestal rises from the floor. Upon it, pulsating with a soft, green light, is the TRIANGULAR PENDANT OF COURAGE. Link approaches, his hand trembling slightly as he reaches out and takes hold of the sacred artifact. Its warmth spreads through his palm, a tangible reassurance of his destiny."
+        }
+      ]
+    },
+    {
+      "id": "S0018",
+      "slug_id": "SEQ5-02",
+      "slugline": "EXT. EASTERN PALACE - COURTYARD - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ5",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link emerges from the dark maw of the Eastern Palace dungeon, the triangular Pendant of Courage clutched in his hand, its soft green glow a beacon against the ancient stone. He is weary, but a new strength radiates from him."
+        },
+        {
+          "kind": "action",
+          "text": "Sahasrahla and Zelda stand waiting in the sun-drenched courtyard. A gentle breeze rustles Sahasrahla's robes as he watches Link approach, a knowing smile playing on his lips. Zelda rushes forward, relief washing over her face."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Link, you did it! I knew you could!"
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link offers her a tired but triumphant smile, holding up the pendant. Sahasrahla steps closer, his gaze profound."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "The Pendant of Courage. You have faced your first true trial, young hero, and you have proven worthy. The blood of your ancestors flows strong within you."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Sahasrahla reaches into the folds of his robe and produces a pair of ornate, winged BOOTS. They shimmer faintly in the sunlight, radiating a subtle energy."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "For your bravery, take these, the Pegasus Boots. They will aid you greatly in the trials to come, granting you speed beyond measure."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link accepts the boots, feeling a strange lightness as he holds them. His eyes meet Sahasrahla's, a silent question in them."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "However, the true darkness Aghanim seeks to unleash is far greater than we first imagined. He is kidnapping the maidens, not merely for sacrifice, but to break the ancient seal between our Light World and the corrupted Dark World."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Zelda GASPS, her hand flying to her mouth. Link's triumphant expression fades, replaced by grim determination."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "To truly wield the Master Sword, you will need all three Pendants. The Pendant of Wisdom is said to lie within the perilous Desert Palace to the west. And the Pendant of Power in the formidable Tower of Hera, high in the mountains to the north."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link looks from the Eastern Palace to the distant horizons, the weight of the new mission settling upon him. The stakes are higher than he could have imagined. He nods, resolute."
+        },
+        {
+          "kind": "dialogue",
+          "character": "LINK",
+          "lines": [
+            "I will find them. I will stop Aghanim."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Sahasrahla offers another knowing nod, his gaze filled with hope and a touch of sorrow for the path Link must now walk. The journey has just begun, and the fate of Hyrule rests on Link's shoulders."
+        }
+      ]
+    },
+    {
+      "id": "S0019",
+      "slug_id": "SEQ5-03",
+      "slugline": "EXT. EASTERN PALACE / DESERT ROAD - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ5",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda stand before Sahasrahla in the courtyard of the Eastern Palace. The urgency of Aghanim's true plans – to unleash the Dark World – hangs heavy in the air. Link still clutches the Pendant of Courage, its green glow a stark contrast to the grim reality."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "The Desert Palace lies far to the west, beyond these arid plains.",
+            "It is a place of ancient riddles and treacherous beasts. Be vigilant, Link, for Aghanim's influence spreads like a plague."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Sahasrahla places a hand on Link's shoulder, his gaze both solemn and encouraging. Zelda nods, her own determination reflecting Link's."
+        },
+        {
+          "kind": "action",
+          "text": "Link takes a deep breath, securing the Pendant of Courage and checking his sword. He then slips on the Pegasus Boots. They feel surprisingly light, a subtle energy humming through them."
+        },
+        {
+          "kind": "action",
+          "text": "He looks at Zelda, who offers a brave, if slightly worried, smile."
+        },
+        {
+          "kind": "dialogue",
+          "character": "LINK",
+          "lines": [
+            "We're ready."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "With a final nod to Sahasrahla, Link and Zelda turn and begin their journey. The ancient palace recedes behind them as they venture back into the vast, sun-baked desert."
+        },
+        {
+          "kind": "action",
+          "text": "The sand stretches endlessly before them, shimmering under the high sun. Link tests the Pegasus Boots. With a burst of speed, he DASHES forward, covering an astonishing distance in mere seconds, kicking up a trail of dust. He quickly slows, grinning, impressed by their power."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Amazing! Those will certainly help."
+          ],
+          "parenthetical": "(a beat)"
+        },
+        {
+          "kind": "action",
+          "text": "They press on, the wind whipping sand around them. The promise of the Desert Palace, with its Pendant of Wisdom and untold dangers, beckons them westward, a new chapter in their desperate quest unfolding under the relentless Hyrule sun."
+        }
+      ]
+    },
+    {
+      "id": "S0020",
+      "slug_id": "SEQ5-04",
+      "slugline": "EXT. HYRULE DESERT - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ5",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda press on through the vast, unforgiving desert. The sun beats down relentlessly, baking the sand to a shimmering haze. The Pegasus Boots allow Link to cover ground quickly, but the sheer scale of the landscape makes their destination feel impossibly distant."
+        },
+        {
+          "kind": "action",
+          "text": "Zelda glances back at the fading silhouette of the Eastern Palace, then forward into the endless expanse. Her brow is furrowed with concern."
+        },
+        {
+          "kind": "action",
+          "text": "ZELDA"
+        },
+        {
+          "kind": "action",
+          "text": "The Desert Palace… it feels like another world entirely out here. And Aghanim’s plan, the Dark World… it’s almost too much to comprehend."
+        },
+        {
+          "kind": "action",
+          "text": "Link slows, taking her hand briefly. His grip is firm, reassuring. He looks out at the desert, then back at her, his eyes filled with a quiet resolve."
+        },
+        {
+          "kind": "action",
+          "text": "LINK"
+        },
+        {
+          "kind": "action",
+          "text": "We will find the pendants. And we will stop him. For Hyrule."
+        },
+        {
+          "kind": "action",
+          "text": "His voice carries a new weight, a conviction forged in the Eastern Palace. He tightens his grip on his sword, the Pendant of Courage warm against his chest. Ahead, a faint, massive STRUCTURE begins to emerge from the heat haze – the DESERT PALACE, ancient and foreboding. Another trial awaits."
+        },
+        {
+          "kind": "action",
+          "text": "With renewed purpose, Link and Zelda continue their march into the heart of the desert, towards the looming threat and the next piece of their destiny."
+        }
+      ]
+    },
+    {
+      "id": "S0021",
+      "slug_id": "SEQ6-01",
+      "slugline": "INT. DESERT PALACE - ANTECHAMBER - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ6",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda stand before the colossal, weathered facade of the Desert Palace. Sand-scoured stone towers into the sky, intricate hieroglyphs hinting at forgotten knowledge and ancient power. The air is thick with the smell of dust and decay, the silence heavy and expectant. Link glances at Zelda, then back at the daunting entrance, his jaw set with resolve."
+        },
+        {
+          "kind": "action",
+          "text": "They push through a heavy, sand-choked doorway, entering a vast ANTECHAMBER. Light filters weakly from cracks in the ceiling, illuminating swirling dust motes. Carved pillars depict scenes of a long-vanished civilization, their eyes seeming to follow Link and Zelda as they move deeper."
+        },
+        {
+          "kind": "action",
+          "text": "A low GROWL echoes from the depths of the palace. The ground TREMBLES. Link draws his sword, his eyes scanning the gloom."
+        },
+        {
+          "kind": "action",
+          "text": "Suddenly, the sand floor RIPPLES and ERUPTS. THREE ENORMOUS SANDWORMS burst forth, their segmented bodies thrashing, razor-sharp teeth snapping at the air. Their eyes glow with malevolent hunger."
+        },
+        {
+          "kind": "action",
+          "text": "Link acts instinctively, his Pegasus Boots allowing him to DART forward, narrowly avoiding a massive bite. He brings his sword down hard on the head of one worm, but its hardened scales deflect the blow."
+        },
+        {
+          "kind": "action",
+          "text": "He remembers the Armos Knights. A different tactic. He nocks an arrow, aiming for the soft underbelly as one worm lunges past. The arrow finds its mark, and the creature SCREECHES, coiling back in pain."
+        },
+        {
+          "kind": "action",
+          "text": "Using the opening, Link closes in, sword flashing. He uses the Pegasus Boots to outmaneuver another worm, spinning around its massive form to expose its vulnerable side. Zelda watches, wide-eyed, ready with a sling to distract the creatures when she can."
+        },
+        {
+          "kind": "action",
+          "text": "He fights with a savage grace, deflecting lunges, striking where he can, and finally, with a powerful overhead slash, severs the head of the first sandworm. It thrashes violently before collapsing into sand."
+        },
+        {
+          "kind": "action",
+          "text": "The remaining two attack with renewed fury, but Link's determination is unwavering. He fires another arrow, stunning a second worm, then finishes it with a thrust of his sword. The final beast, enraged, charges. Link stands his ground, parrying its attack, then leaping onto its back, plunging his sword deep into its spine."
+        },
+        {
+          "kind": "action",
+          "text": "The last sandworm lets out a dying WAIL, its immense body going rigid before crumbling to sand. Link stands panting, covered in dust, but victorious. He wipes sweat from his brow, his gaze firm."
+        },
+        {
+          "kind": "action",
+          "text": "In the center of the chamber, where the sandworms had been guarding, a pedestal rises from the sandy floor. Upon it, radiating a soft, blue light, is the TRIANGULAR PENDANT OF WISDOM. Link approaches, his hand reaching out to claim the artifact."
+        },
+        {
+          "kind": "action",
+          "text": "He grasps the pendant. A wave of cool energy washes over him, a sense of clarity settling in his mind. He looks at Zelda, a weary but triumphant smile gracing his lips."
+        },
+        {
+          "kind": "action",
+          "text": "ZELDA"
+        },
+        {
+          "kind": "action",
+          "text": "You did it, Link. Another one."
+        }
+      ]
+    },
+    {
+      "id": "S0022",
+      "slug_id": "SEQ6-02",
+      "slugline": "EXT. HYRULE DESERT / INT. TOWER OF HERA - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ6",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda exit the Desert Palace, leaving the sand-filled antechamber behind. The blue glow of the Pendant of Wisdom, now secured alongside the Pendant of Courage, emanates from Link's satchel. The desert sun, though still intense, feels less oppressive after their victory."
+        },
+        {
+          "kind": "action",
+          "text": "They travel eastward, the Pegasus Boots a blur beneath Link as he covers vast distances, Zelda riding close behind. The landscape gradually shifts from arid dunes to rocky outcroppings. Far in the distance, silhouetted against the sky, a massive, ancient TOWER rises — the Tower of Hera, beckoning them towards its perils."
+        },
+        {
+          "kind": "action",
+          "text": "They reach the base of the Tower, a daunting structure of dark, rough-hewn stone. Runes glow faintly along its massive archway. The air here is thin and cold, a stark contrast to the desert heat. A sense of ancient power, both protective and malevolent, permeates the surroundings. Link glances at Zelda, then at the entrance, his grip tightening on his sword."
+        },
+        {
+          "kind": "action",
+          "text": "Inside, the Tower is a labyrinth of circular staircases and crumbling platforms, all leading upwards into a dizzying void. Light streams through high, arched windows, revealing motes of dust dancing in the air. As they ascend, the faint HUM of magic intensifies, reverberating through the stone."
+        },
+        {
+          "kind": "action",
+          "text": "They reach a vast, central chamber at the Tower's summit. The ceiling is open to the sky, revealing distant clouds. In the center, a colossal, pulsating mass of flesh and eyes BLOCKS their path — the GIANT FAT WORM. It is immense, with a gaping maw ringed by rows of teeth, and multiple bulging, unblinking eyes that swivel independently, fixing on Link."
+        },
+        {
+          "kind": "action",
+          "text": "The creature lets out a guttural ROAR that shakes the very foundations of the tower. It BEGINS TO LUNGE, its tremendous weight sending fissures through the stone floor. Link activates his Pegasus Boots, dashing around the creature's slow, ponderous attacks. Its movements are powerful, but predictable."
+        },
+        {
+          "kind": "action",
+          "text": "Link unleashes a flurry of sword strikes on its thick hide, but his blade merely bounces off, yielding no visible damage. He dodges a sweeping tail attack, then leaps onto a crumbling pillar for higher ground. The worm SMASHES the pillar, forcing him to leap to another."
+        },
+        {
+          "kind": "action",
+          "text": "He notices its eyes — they are strangely vulnerable, glowing faintly. Remembering his prior battles, Link nocks an arrow, aiming for the largest, most central eye. The arrow flies true, piercing the eye with a wet SQUELCH. The worm lets out a shriek of pain, thrashing wildly."
+        },
+        {
+          "kind": "action",
+          "text": "The wounded eye begins to swell and glow, pulsating with a sickly purple light. Link realizes his chance. He fires another arrow, then another, targeting the other glowing eyes. Each hit elicits a new SCREAM, and the worm's attacks become more erratic and desperate."
+        },
+        {
+          "kind": "action",
+          "text": "Finally, with one last, well-placed arrow, the worm's final eye BURSTS. The creature convulses violently, its massive body slamming against the tower walls, before collapsing with a thunderous CRASH that sends dust and debris everywhere. The silence that follows is deafening."
+        },
+        {
+          "kind": "action",
+          "text": "Link stands amidst the wreckage, panting, his face grimmed with dust, but a fierce satisfaction in his eyes. He is growing with each challenge. In the exact spot where the monstrous worm had been guarding, a pedestal rises from the shattered stone. Upon it, radiating a vibrant, orange light, is the TRIANGULAR PENDANT OF POWER."
+        },
+        {
+          "kind": "action",
+          "text": "Link approaches, his steps heavy but resolute. He reaches out and takes the pendant. A surge of raw, untamed energy flows through him, a feeling of immense strength and readiness. He looks at the two pendants now secured, and then at the new one in his hand. All three Pendants — Courage, Wisdom, and Power — are now his. He has overcome these trials."
+        },
+        {
+          "kind": "action",
+          "text": "He looks up at the open sky, a new, determined fire in his eyes. He is ready for what comes next."
+        }
+      ]
+    },
+    {
+      "id": "S0023",
+      "slug_id": "SEQ6-03",
+      "slugline": "INT. TOWER OF HERA - SUMMIT - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ6",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link stands amidst the wreckage of the Tower of Hera's summit, dust motes dancing in the sunlight filtering through the open ceiling. In his hands, he holds the three PENDANTS: Courage (green), Wisdom (blue), and Power (orange), their gentle glows illuminating his determined face. Zelda rushes to his side, her eyes wide with relief and awe."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "Link, you did it! All three! We have them!"
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link offers a weary but triumphant smile, securing the pendants carefully in his satchel, their magic humming against his chest. A profound sense of accomplishment washes over him, momentarily easing the immense weight of his quest."
+        },
+        {
+          "kind": "action",
+          "text": "Suddenly, a familiar, ancient VOICE reverberates directly in Link's mind, clear as if Sahasrahla were standing right beside him. Zelda looks at Link, sensing the telepathic communication."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA (O.S. TELEPATHIC)",
+          "lines": [
+            "Link, you have proven your strength and wisdom. The three sacred Pendants are now united. The time has come to claim the Master Sword."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link's eyes widen slightly, a new surge of anticipation and dread mixing within him. He shares a look with Zelda, who nods, understanding the gravity of the message."
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA (O.S. TELEPATHIC)",
+          "lines": [
+            "The legendary blade awaits you in the Lost Woods, a place of ancient magic and perilous illusions. Seek the pedestal, and with the pendants, awaken its true power."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link looks towards the distant horizon, a new path unfolding before him. The Lost Woods. The Master Sword. The final trial before facing Aghanim. He grips the hilt of his uncle's sword, a renewed resolve settling deep in his heart."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "The Lost Woods... We must go, Link."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link nods, his gaze firm. He turns to Zelda, a silent promise passing between them. With the three Pendants secured and their next destination revealed, they begin their descent from the Tower of Hera, ready to embark on the next perilous stage of their heroic journey."
+        }
+      ]
+    },
+    {
+      "id": "S0024",
+      "slug_id": "SEQ6-04",
+      "slugline": "EXT. FOOTHILLS OF HERA - PATH TO LOST WOODS - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ6",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda descend the treacherous slopes from the Tower of Hera, the massive structure shrinking behind them. The three Pendants — Courage, Wisdom, and Power — hum softly in Link's satchel, a tangible weight of their recent victories. The air here is less thin, the wind still biting but less harsh than the summit."
+        },
+        {
+          "kind": "action",
+          "text": "They reach the base of the mountains, transitioning to rolling hills and then vast, open plains. Link activates the Pegasus Boots, a blur of motion as he covers ground with incredible speed, Zelda keeping pace beside him. The landscape is desolate but beautiful, a stark contrast to the magical dungeons they've just endured."
+        },
+        {
+          "kind": "action",
+          "text": "In the far distance, a dark, dense mass of TREES looms on the horizon, an unnatural shadow against the blue sky. The LOST WOODS. Even from afar, a sense of ancient, untamed magic emanates from it."
+        },
+        {
+          "kind": "action",
+          "text": "ZELDA"
+        },
+        {
+          "kind": "action",
+          "text": "The Lost Woods… Sahasrahla spoke of its illusions. And the Master Sword… it truly feels like the final step before facing Aghanim."
+        },
+        {
+          "kind": "action",
+          "text": "Link glances at the dark woods, his expression grim but resolute. He tightens his grip on the hilt of his uncle's sword, then touches the satchel where the pendants rest."
+        },
+        {
+          "kind": "action",
+          "text": "LINK"
+        },
+        {
+          "kind": "action",
+          "text": "It is. And we will be ready. For Hyrule."
+        },
+        {
+          "kind": "action",
+          "text": "He puts renewed power into his stride, the Pegasus Boots kicking up dust as they race across the plains. The ominous shadow of the Lost Woods grows larger with every passing moment, a beckoning challenge. Link and Zelda, united in purpose, charge towards their destiny."
+        }
+      ]
+    },
+    {
+      "id": "S0025",
+      "slug_id": "SEQ7-01",
+      "slugline": "EXT. LOST WOODS - EDGE - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ7",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda stand at the ominous edge of the LOST WOODS. Ancient, gnarled trees with impossibly thick trunks loom, their branches intertwining into a dense, dark canopy that blocks out much of the sunlight. A chill, damp air hangs heavy, even on a sunny day. A faint, unsettling WHISPER seems to emanate from the depths, a sound like wind through leaves, yet almost like voices."
+        },
+        {
+          "kind": "action",
+          "text": "Zelda shivers, pulling her cloak tighter. The sense of foreboding is palpable. Link takes a deep breath, clutching the three Pendants in his satchel for a moment, drawing strength from their presence."
+        },
+        {
+          "kind": "action",
+          "text": "They step into the woods. Immediately, the path behind them seems to blur, the trees shifting imperceptibly. The sunlight dwindles, replaced by a perpetual twilight. Every direction looks the same."
+        },
+        {
+          "kind": "action",
+          "text": "ZELDA"
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "It feels... disorienting. The trees... they're changing."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Link tries to lead with his instincts, following what he believes is a straight path. He even tries marking a tree with his sword, a quick, shallow gouge in the bark. They walk for what feels like an hour, the whispers growing louder, more insistent, almost taunting."
+        },
+        {
+          "kind": "action",
+          "text": "Suddenly, Link stops. He stares at a tree before them. The subtle gouge mark, unmistakably his, is visible on its trunk. They've walked in a circle."
+        },
+        {
+          "kind": "dialogue",
+          "character": "LINK",
+          "lines": [
+            "The woods... it plays tricks."
+          ],
+          "parenthetical": "(frustrated)"
+        },
+        {
+          "kind": "action",
+          "text": "Zelda looks around, a flicker of fear in her eyes. The mystical aura of the woods is not just beautiful; it is actively hostile, designed to confuse and deter. Link closes his eyes, focusing on the hum of the pendants, trying to sense a deeper truth, a pattern beneath the illusion. He opens his eyes, a glint of determination replacing his frustration."
+        }
+      ]
+    },
+    {
+      "id": "S0026",
+      "slug_id": "SEQ7-02",
+      "slugline": "INT. LOST WOODS - DEEPER WITHIN - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ7",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link closes his eyes, drawing a deep breath. He touches the satchel where the three Pendants rest, feeling their combined warmth against his hand. He quiets his mind, pushing past the disorienting whispers and shifting shadows, focusing instead on a faint, almost imperceptible PULSE beneath the ancient magic of the woods."
+        },
+        {
+          "kind": "action",
+          "text": "He opens his eyes. The frustration from before is gone, replaced by a quiet, determined focus. He takes a step, not looking for a visible path, but seeming to *sense* a direction. Zelda watches, uncertain, but trusts him implicitly, following close behind."
+        },
+        {
+          "kind": "action",
+          "text": "They walk deeper. The woods fight back. Trees subtly shift, branches reaching out like grasping claws. Paths flicker in and out of existence, tempting them down false routes. Illusions of strange creatures dart between the trees, whispering taunts."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "It's trying to confuse us again, Link! Which way is real?"
+          ],
+          "parenthetical": "(a tremor in her voice)"
+        },
+        {
+          "kind": "action",
+          "text": "Link doesn't waver. He pushes through a shimmering wall of illusionary thorns, his hand still on the pendants, a faint, green, blue, and orange glow emanating from his satchel, steadying the distortions around them. He strides with purpose, his uncle's sword held ready, not to fight, but to part the magical veil."
+        },
+        {
+          "kind": "action",
+          "text": "The illusions begin to weaken, like mist dissipating in the sun. The taunting whispers fade, replaced by the gentle rustle of real leaves. The oppressive gloom lifts slightly. They have broken through a significant layer of the woods' defenses."
+        },
+        {
+          "kind": "action",
+          "text": "They emerge into a serene, almost sacred part of the woods. The trees here are impossibly tall, their bark smooth and luminous. Light filters down in soft, ethereal beams, illuminating ANCIENT STONE MARKERS, half-buried in moss, arranged in a subtle spiral pattern leading further in. The air hums with a quiet, undeniable power."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "We did it, Link... This is it. We're close."
+          ],
+          "parenthetical": "(awe in her voice)"
+        },
+        {
+          "kind": "action",
+          "text": "Link nods, his gaze following the spiral of stone markers, a profound sense of destiny settling over him. He tightens his grip on his sword, ready for the final step of this leg of his journey. The Master Sword is near."
+        }
+      ]
+    },
+    {
+      "id": "S0027",
+      "slug_id": "SEQ7-03",
+      "slugline": "INT. LOST WOODS - MASTER SWORD PEDESTAL - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ7",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link and Zelda follow the spiraling ANCIENT STONE MARKERS deeper into the serene part of the Lost Woods. The ethereal light intensifies, illuminating the moss-covered stones as if guiding them. The air thrums with anticipation, a sacred hush falling over the ancient trees."
+        },
+        {
+          "kind": "action",
+          "text": "They arrive in a small, circular clearing. In the very center, bathed in a celestial glow that seems to emanate from the ground itself, stands a massive, weather-worn STONE PEDESTAL. Embedded within it, almost fused with the stone, is a legendary sword: the MASTER SWORD. Its blade, though ancient, gleams with an almost blinding, silver light, and its hilt is adorned with the Winged Crest of Hyrule."
+        },
+        {
+          "kind": "action",
+          "text": "Zelda gasps, her hand flying to her mouth. A profound sense of awe and destiny fills the clearing. Link stands before the pedestal, his breath catching in his throat. This is it. The culmination of his quest through perilous dungeons and mystical forests."
+        },
+        {
+          "kind": "action",
+          "text": "He reaches into his satchel and retrieves the three PENDANTS: COURAGE, WISDOM, and POWER. Their green, blue, and orange glows pulsed rhythmically, mirroring the light of the Master Sword. With trembling hands, Link places each pendant into a corresponding TRIANGULAR INDENTATION around the base of the pedestal. As the third pendant clicks into place, a powerful RESONANCE ripples through the air."
+        },
+        {
+          "kind": "action",
+          "text": "The pedestal GLOWS with an blinding, pure white light, ascending into the Master Sword itself. The blade VIBRATES with intense energy, its hilt now radiating warmth. Link takes a deep breath, his eyes fixed on the legendary weapon. He reaches out, gripping the hilt. It fits perfectly in his hand, as if custom-made for him. A surge of raw, ancient power courses through his arm, up into his chest."
+        },
+        {
+          "kind": "action",
+          "text": "With a grunt of effort, he PULLS. The sword slides free from the stone with a resounding, crystalline SHING that echoes through the entire woods. As the Master Sword is freed, a WAVE OF PURE ENERGY explodes outwards, shimmering through the clearing and beyond. The remaining subtle illusions in the deepest parts of the woods dissipate entirely, revealing a path where none had truly existed before."
+        },
+        {
+          "kind": "action",
+          "text": "Link stands, holding the Master Sword aloft. Its sacred light bathes him, illuminating his face. He is no longer just a young man; he is the destined hero. A feeling of profound purpose, of clarity, settles within him. The weight of the world still rests on his shoulders, but now, he has the means to bear it."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "The Master Sword... Link, you did it!"
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "She looks at him, tears of relief and awe in her eyes, a triumphant smile breaking through. Link turns to her, a powerful, determined glint in his own eyes. The sword feels like an extension of himself, ready to face the darkness. He is ready for Aghanim."
+        }
+      ]
+    },
+    {
+      "id": "S0028",
+      "slug_id": "SEQ7-04",
+      "slugline": "INT. LOST WOODS - MASTER SWORD PEDESTAL - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ7",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link stands in the tranquil clearing, the newly-drawn MASTER SWORD gleaming powerfully in his hand. The initial euphoria of claiming the legendary blade, the rush of ancient power, still courses through him. Zelda watches him, her face radiant with awe and relief. For a fleeting moment, triumph fills the air."
+        },
+        {
+          "kind": "action",
+          "text": "But the peace is shattered. A faint, desperate VOICE, imbued with a terrible urgency, ECHOES directly in Link's mind. It's Zelda's voice, but distant, strained, filled with terror. He stiffens, the smile fading from his lips."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA (O.S. TELEPATHIC)",
+          "lines": [
+            "Link... help me... They've found me! Aghanim's guards... they're taking me back to the castle!"
+          ],
+          "parenthetical": "(desperate)"
+        },
+        {
+          "kind": "action",
+          "text": "The real Zelda, standing just feet from him, reels, clutching her head. She too has felt the telepathic scream, a ripple of raw panic. Her eyes wide, she looks at Link, then towards the distant, implied direction of Hyrule Castle, horror dawning on her face."
+        },
+        {
+          "kind": "dialogue",
+          "character": "ZELDA",
+          "lines": [
+            "No... not again! It's Aghanim! He knows we were here! We have to go, Link, now!"
+          ],
+          "parenthetical": "(panicked)"
+        },
+        {
+          "kind": "action",
+          "text": "Link's moment of triumph collapses into a cold, hard knot of fear and fury. His grip on the Master Sword tightens, his knuckles white. The sacred blade, a symbol of hope moments ago, now feels like a weapon he must wield with desperate speed."
+        },
+        {
+          "kind": "action",
+          "text": "He looks at Zelda, his jaw set. There's no time for doubt, no time for celebration. His mission just became even more urgent. He has the sword. Now he must save her. He pulls his Pegasus Boots onto his feet, the familiar leather a comforting weight."
+        },
+        {
+          "kind": "action",
+          "text": "With a determined nod, he turns, the Master Sword now held ready, point angled towards the invisible, distant threat of Hyrule Castle. The new power within him is no longer just a surge of purpose, but a burning resolve to protect. He activates the Pegasus Boots, a blur of motion as he sprints, leaving the sacred clearing behind, racing towards the ominous castle, ready to face Aghanim and rescue Zelda, with the legendary sword now in hand."
+        }
+      ]
+    },
+    {
+      "id": "S0029",
+      "slug_id": "SEQ8-01",
+      "slugline": "EXT. HYRULE CASTLE - GATES - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ8",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link is a blur, streaking across the landscape. The PEGASUS BOOTS propel him with incredible speed, each stride devouring yards of ground. The MASTER SWORD, held firmly in his hand, seems to hum with anticipation, its sacred light a faint shimmer even in the bright day. His eyes are fixed on the distant, looming silhouette of HYRULE CASTLE, now appearing even more ominous, its spires piercing the sky like dark teeth."
+        },
+        {
+          "kind": "action",
+          "text": "He reaches the castle's outer wall in moments, not even slowing. He leaps, using the momentum of the boots to scale a lower battlement, landing silently on the stone path. The air here is heavy, crackling with a malevolent energy that wasn't present before. The castle feels... alive with darkness."
+        },
+        {
+          "kind": "action",
+          "text": "Suddenly, from behind two ornate, heavy gates, a squadron of HYRULEAN GUARDS appear, but they are different. Their eyes GLOW with an unnatural, sickly green light, and their movements are jerky, unnatural. They are ENCHANTED, more powerful, driven by Aghanim's dark magic."
+        },
+        {
+          "kind": "action",
+          "text": "One raises a spear, lunging forward with shocking speed. Link, fueled by a surge of pure instinct and the Master Sword's power, parries the blow with a resounding CLANG. The blade feels light, an extension of his will. He spins, a dazzling arc of silver light, and the enchanted guard is disarmed, his spear clattering to the ground."
+        },
+        {
+          "kind": "action",
+          "text": "More guards converge, their grunts and battle cries distorted, inhuman. Link moves like a whirlwind, deflecting blows, parrying attacks, the Master Sword a blur of defensive and offensive motion. He doesn't kill them, but incapacitates them, knocking them unconscious with precise, powerful strikes. He's faster, stronger, his skill exponentially grown since he first entered these walls."
+        },
+        {
+          "kind": "action",
+          "text": "He cuts through the initial wave, leaving a path of fallen, groaning guards in his wake. The heavy gates, still closed, are the next obstacle. Link raises the Master Sword, its tip glowing faintly. He brings it down with focused power, and the ancient, iron-bound wood SPLINTERS with a deafening CRACK, allowing him passage."
+        },
+        {
+          "kind": "action",
+          "text": "He sprints through the broken gates, deeper into the castle courtyard. His resolve is steel. Zelda is in here, and he will not fail her. The castle is now a fortress of shadows, but Link is a beacon of light, armed with the legendary blade and a desperate mission."
+        }
+      ]
+    },
+    {
+      "id": "S0030",
+      "slug_id": "SEQ8-02",
+      "slugline": "INT. HYRULE CASTLE - THRONE ROOM - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ8",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link sprints through the castle's inner halls, the Master Sword a beacon of light in the deepening shadows. More ENCHANTED GUARDS, tougher and faster than the ones outside, attempt to block his path. Their armor CLANKS ominously, and their movements are unnervingly precise. Link weaves through them, a whirlwind of motion, his Pegasus Boots giving him an impossible agility. He parries a heavy AXE BLOW with the Master Sword, the impact sending sparks flying, and disarms another with a quick, powerful thrust. He's a blur, leaving a trail of stunned and incapacitated foes, driven by a singular purpose."
+        },
+        {
+          "kind": "action",
+          "text": "He bursts into the GRAND THRONE ROOM. The once opulent chamber is now desecrated, adorned with dark, pulsating SIGILS etched into the floor and walls. A sickly GREEN GLOW emanates from a central pedestal where PRINCESS ZELDA lies, unconscious, ethereal chains of dark magic binding her. Her face is pale, her breath shallow. AGHANIM stands over her, his hands raised, chanting in a low, guttural TONGUE. His eyes burn with malevolent power."
+        },
+        {
+          "kind": "action",
+          "text": "Link's blood runs cold at the sight. He sees the fragile form of Zelda, the dark sorcery enveloping her. A primal scream of fury escapes his lips. He charges, the Master Sword held high, ready to strike Aghanim down."
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim turns, his chant abruptly cut short by Link's arrival. A cruel, knowing SMILE spreads across his face. He doesn't seem surprised. With a flick of his wrist, a surge of dark energy flares from his hand."
+        },
+        {
+          "kind": "action",
+          "text": "AGHANIM"
+        },
+        {
+          "kind": "dialogue",
+          "character": "AGHANIM",
+          "lines": [
+            "Too late, boy! Your princess has served her purpose... a mere key."
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim unleashes a torrent of dark magic at the pedestal. With a sickening POP, Zelda VANISHES in a flash of green light, absorbed into the nefarious ritual. The ethereal chains dissipate, leaving the pedestal empty. Link skids to a halt, the Master Sword quivering in his hand, his eyes wide with horror."
+        },
+        {
+          "kind": "action",
+          "text": "LINK"
+        },
+        {
+          "kind": "dialogue",
+          "character": "LINK",
+          "lines": [
+            "Zelda! What have you done?!"
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim LAUGHS, a chilling, triumphant sound that echoes through the desecrated throne room. His power seems to swell, the dark sigils on the walls pulsing brighter."
+        },
+        {
+          "kind": "action",
+          "text": "AGHANIM"
+        },
+        {
+          "kind": "dialogue",
+          "character": "AGHANIM",
+          "lines": [
+            "I have merely accelerated destiny. The seven maidens are gathered. The seal on the Dark World weakens! Soon, Ganon will be unleashed, and your world shall bow! Prepare to witness the end, hero! For you, too, are merely a pawn in a game far beyond your understanding!"
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "He gestures, and two massive, spectral FIREBALLS erupt from his hands, hurtling towards Link with incredible speed. Link barely has time to react, bringing the Master Sword up in a desperate defensive arc. The blade GLOWS, deflecting the fireballs with a mighty CRACK, sending them harmlessly into the walls, where they explode into bursts of arcane energy."
+        },
+        {
+          "kind": "action",
+          "text": "Link stands firm, the Master Sword humming in his grip. His initial shock turns to burning resolve. Aghanim has taken Zelda, but Link will not let him win. The duel has begun."
+        }
+      ]
+    },
+    {
+      "id": "S0031",
+      "slug_id": "SEQ8-03",
+      "slugline": "INT. HYRULE CASTLE - THRONE ROOM - DAY",
+      "line_start": null,
+      "sequence_id": "SEQ8",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Link unleashes a battle cry, charging Aghanim. The Master Sword, imbued with sacred power, HUMS a resonant frequency against Aghanim's dark magic. Aghanim counters Link's charge with another barrage of spectral FIREBALLS. Link weaves and ducks, deflecting the emerald inferno with swift, precise swings of the Master Sword. Each deflected fireball explodes against the ornate castle walls, sending showers of stone and arcane energy cascading across the desecrated throne room."
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim's eyes narrow with dark amusement. He conjures shadowy apparitions of ENCHANTED GUARDS from the very air, spectral figures that shimmer and lunge at Link. Link, unyielding, slices through them with the Master Sword, the spectral forms dissolving into wisps of smoke upon contact with the sacred blade. He presses his assault, refusing to be deterred."
+        },
+        {
+          "kind": "dialogue",
+          "character": "AGHANIM",
+          "lines": [
+            "A persistent fly, aren't we? But even the brightest light dims in the face of true darkness!"
+          ],
+          "parenthetical": null
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim unleashes a concentrated BEAM OF DARK ENERGY from his staff, a blinding torrent of malevolent power. Link, with a desperate burst of speed from his Pegasus Boots, dodges the blast. The beam obliterates a section of the throne, sending fragments of ancient wood and velvet flying. Link uses the distraction, closing the distance in a single, powerful lunge."
+        },
+        {
+          "kind": "action",
+          "text": "With a roar of pure determination, Link brings the Master Sword down in a searing arc. Aghanim, surprised by Link's speed, conjures a shimmering DARK SHIELD, but the Master Sword, powered by Link's will and ancient magic, slashes through it. The blade connects, a shallow but definitive WOUND opening on Aghanim's arm. A gasp of pain escapes the sorcerer's lips."
+        },
+        {
+          "kind": "action",
+          "text": "Aghanim recoils, clutching his bleeding arm. His eyes, now burning with rage rather than amusement, fix on Link. The dark sigils on the walls flare, pulsing violently. The air thickens, growing heavy with a terrifying, unknown force. The throne room itself seems to groan under the immense magical strain. Link stands his ground, the Master Sword still humming, ready for the next move, but a sense of profound dread begins to creep in."
+        }
+      ]
+    },
+    {
+      "id": "S0032",
+      "slug_id": "SEQ8-04",
+      "slugline": "INT. HYRULE CASTLE - THRONE ROOM / EXT. DARK WORLD - GREAT PYRAMID - CONTINUOUS",
+      "line_start": null,
+      "sequence_id": "SEQ8",
+      "blocks": [
+        {
+          "kind": "action",
+          "text": "Aghanim, clutching his bleeding arm, lets out a roar of pure, unadulterated FURY. The pain has twisted his face into a grotesque mask of hatred. The pulsing dark sigils on the throne room walls FLARE into an infernal glow, casting long, dancing shadows. The very air shimmers, growing impossibly cold and heavy, crackling with dark energy. Aghanim's eyes lock onto Link, a malevolent plan forming."
+        },
+        {
+          "kind": "action",
+          "text": "AGHANIM"
+        },
+        {
+          "kind": "dialogue",
+          "character": "AGHANIM",
+          "lines": [
+            "You may have wounded me, boy... but you have no idea the forces you trifle with! Your world... is already lost! And you... you will suffer in the darkness, a futile testament to your failure!"
+          ],
+          "parenthetical": "(voice dripping with venom)"
+        },
+        {
+          "kind": "action",
+          "text": "With a final, guttural shout, Aghanim unleashes a devastating, black vortex of energy. It doesn't explode outwards, but contracts, targeting Link directly. The air SCREAMS as the vortex rapidly expands, engulfing Link completely. The Master Sword's light is instantly swallowed by the inky blackness. A terrifying ROAR rips through the throne room, not from Aghanim, but from the raw, unleashed power of the void itself."
+        },
+        {
+          "kind": "action",
+          "text": "Link is consumed. The throne room is plunged into an unnatural, terrifying SILENCE for a moment, Aghanim panting, a cruel, satisfied smirk returning to his face."
+        },
+        {
+          "kind": "action",
+          "text": "EXT. DARK WORLD - GREAT PYRAMID - CONTINUOUS"
+        },
+        {
+          "kind": "action",
+          "text": "Link falls through an endless, swirling void, disoriented and helpless. The world spins, light and shadow blurring into a chaotic mess. Suddenly, he SLAMS onto solid ground with a jarring impact, the air knocked from his lungs. He GROANS, struggling to push himself up."
+        },
+        {
+          "kind": "action",
+          "text": "He is in a desolate, terrifying land. The sky is a sickly, perpetual TWILIGHT, painted in hues of deep purple and blood red, with twisted, gnarled TREES silhouetted against it. A vast, dead landscape stretches as far as the eye can see, scarred with craters and strange, alien rock formations. The air is thick with a suffocating, putrid smell."
+        },
+        {
+          "kind": "action",
+          "text": "Link finds himself at the summit of a gigantic, ancient, black STONE PYRAMID, its angular sides reaching up into the corrupted sky like a monument to despair. The Master Sword, still clutched in his hand, now feels strangely heavy, its light muted in this oppressive realm. He looks around, a cold dread seeping into his bones. This is the Dark World."
+        },
+        {
+          "kind": "action",
+          "text": "A familiar, calm voice, distant yet clear, suddenly ECHOES in Link's mind."
+        },
+        {
+          "kind": "action",
+          "text": "SAHASRAHLA (O.S. TELEPATHIC)"
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "Link... can you hear me? Aghanim has banished you... to the corrupted Dark World..."
+          ],
+          "parenthetical": "(urgent, strained)"
+        },
+        {
+          "kind": "action",
+          "text": "Link pushes himself to his feet, swaying slightly, the alien landscape spinning. He grips the Master Sword, a flicker of renewed determination in his eyes."
+        },
+        {
+          "kind": "action",
+          "text": "LINK"
+        },
+        {
+          "kind": "dialogue",
+          "character": "LINK",
+          "lines": [
+            "Sahasrahla! Where is Zelda? Where am I?"
+          ],
+          "parenthetical": "(desperate)"
+        },
+        {
+          "kind": "action",
+          "text": "SAHASRAHLA (O.S. TELEPATHIC)"
+        },
+        {
+          "kind": "dialogue",
+          "character": "SAHASRAHLA",
+          "lines": [
+            "Zelda, and the other six maidens, are trapped within this desolate realm. Aghanim's ritual is complete... the seal on Ganon is breaking! You must rescue them, Link! Their power is the key... to breaking the barrier to Ganon's Tower! Find the first maiden... she is held within the Dark Palace. You are Hyrule's last hope. Do not falter..."
+          ],
+          "parenthetical": "(a final, telepathic push)"
+        },
+        {
+          "kind": "action",
+          "text": "The telepathic link FADES. Link stands alone on the precipice of the Great Pyramid, the desolate Dark World stretching before him, a terrifying, insurmountable challenge. But within his chest, a new resolve hardens. He raises the Master Sword, its muted light still a defiance against the encompassing darkness. He will find the maidens. He will save Hyrule. His quest has only just begun."
+        }
+      ]
+    }
+  ]
+}

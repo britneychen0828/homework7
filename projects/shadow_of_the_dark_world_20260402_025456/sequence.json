@@ -1,0 +1,105 @@
+{
+  "project_id": "shadow_of_the_dark_world_20260402_025456",
+  "sequence_count": 8,
+  "note": null,
+  "sequences": [
+    {
+      "id": "SEQ1",
+      "title": "Zelda's Urgent Plea",
+      "act": 1,
+      "goal": "To establish Link's call to adventure, his initial motivation (saving his uncle and Zelda), and to equip him with his first tools for the perilous journey ahead.",
+      "emotional_tone": "Urgent, sorrowful, determined",
+      "key_locations": [
+        "Link's Home",
+        "Hyrule Castle (Outer Walls)"
+      ],
+      "exit_beat": "Armed with his uncle's sword and shield, Link steels himself, ready to infiltrate the formidable Hyrule Castle and rescue Princess Zelda."
+    },
+    {
+      "id": "SEQ2",
+      "title": "Infiltration and Revelation",
+      "act": 1,
+      "goal": "To establish Link's nascent heroism as he successfully infiltrates Hyrule Castle and rescues Princess Zelda, leading to Zelda's revelation of Aghanim's true, darker intentions and the legendary Master Sword's critical importance.",
+      "emotional_tone": "Tense, triumphant, urgent",
+      "key_locations": [
+        "Hyrule Castle",
+        "Hyrule Castle Sewers",
+        "Sanctuary"
+      ],
+      "exit_beat": "Zelda reveals Aghanim's ominous scheme to kidnap maidens and tasks Link with finding the legendary Master Sword, guiding him towards Kakariko Village to seek the elder who can lead him to Sahasrahla."
+    },
+    {
+      "id": "SEQ3",
+      "title": "Kakariko's Guidance",
+      "act": 2,
+      "goal": "Link seeks refuge and answers in Kakariko Village, evades initial threats, and receives critical guidance from the Village Elder, who further clarifies Aghanim's threat and directs him to Sahasrahla.",
+      "emotional_tone": "Cautious, informative, hopeful yet foreboding",
+      "key_locations": [
+        "Road to Kakariko Village",
+        "Kakariko Village"
+      ],
+      "exit_beat": "The Village Elder, after revealing more of Aghanim's sinister plans, directs Link towards the Eastern Palace to find Sahasrahla, setting him on the next stage of his quest for the Master Sword."
+    },
+    {
+      "id": "SEQ4",
+      "title": "Sahasrahla's Challenge",
+      "act": 2,
+      "goal": "To establish Link's journey to the Eastern Palace, his meeting with Sahasrahla, and the initial challenge to retrieve the Pendant of Courage, solidifying his path toward becoming the destined hero.",
+      "emotional_tone": "Determined, challenging, pivotal",
+      "key_locations": [
+        "Kakariko Village",
+        "Eastern Palace"
+      ],
+      "exit_beat": "Sahasrahla tasks Link with infiltrating the treacherous Eastern Palace to retrieve the Pendant of Courage, compelling Link to face his first major dungeon and prove his heroic lineage."
+    },
+    {
+      "id": "SEQ5",
+      "title": "Pendant of Courage",
+      "act": 2,
+      "goal": "To demonstrate Link's growing courage and skill as he navigates his first major dungeon, acquires a vital artifact, and receives crucial revelations and new objectives from Sahasrahla, significantly escalating the stakes.",
+      "emotional_tone": "Triumphant, revealing, escalating",
+      "key_locations": [
+        "Eastern Palace",
+        "Eastern Palace Dungeon"
+      ],
+      "exit_beat": "Sahasrahla rewards Link with the Pegasus Boots and reveals Aghanim's sinister plan to open the Dark World, sending Link on an urgent quest to gather the Pendants of Wisdom and Power from distant temples."
+    },
+    {
+      "id": "SEQ6",
+      "title": "Trial of the Remaining Pendants",
+      "act": 2,
+      "goal": "To demonstrate Link's growing strength and determination as he navigates perilous environments and defeats formidable foes to acquire the Pendants of Wisdom and Power, completing the set needed for the Master Sword.",
+      "emotional_tone": "Perilous, triumphant, determined",
+      "key_locations": [
+        "Desert Palace",
+        "Tower of Hera"
+      ],
+      "exit_beat": "With all three pendants now secured, Link receives guidance towards the sacred Lost Woods, steeling himself for the final trial to claim the legendary Master Sword."
+    },
+    {
+      "id": "SEQ7",
+      "title": "The Master Sword's Calling",
+      "act": 2,
+      "goal": "To depict Link's successful navigation of the Lost Woods, his worthiness to claim the Master Sword, and his subsequent empowerment, setting the stage for his confrontation with Aghanim.",
+      "emotional_tone": "Mystical, triumphant, urgent",
+      "key_locations": [
+        "Lost Woods",
+        "Master Sword Pedestal"
+      ],
+      "exit_beat": "With the Master Sword firmly in hand, Link feels a surge of power and purpose, but his moment of triumph is immediately shattered by a desperate telepathic plea from Princess Zelda, revealing her recapture and return to Hyrule Castle."
+    },
+    {
+      "id": "SEQ8",
+      "title": "Aghanim's Reckoning",
+      "act": 3,
+      "goal": "Link races back to Hyrule Castle, confronts the evil sorcerer Aghanim, and defeats him in a climactic duel, only to be tragically banished to the desolate Dark World where the true scale of Ganon's impending release is revealed, initiating a desperate new quest.",
+      "emotional_tone": "Climactic, desperate, foreboding, resolute",
+      "key_locations": [
+        "Hyrule Castle",
+        "Dark World",
+        "Great Pyramid"
+      ],
+      "exit_beat": "Banished to the desolate Great Pyramid in the Dark World, Link hears Sahasrahla's urgent telepathic plea to rescue the seven maidens, fully accepting his role as Hyrule's last hope against the impending wrath of Ganon."
+    }
+  ]
+}

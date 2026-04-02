@@ -1,0 +1,47 @@
+{
+  "project_id": "terminator_2_20260401_151738",
+  "structure_model": "three_act_feature",
+  "acts": [
+    {
+      "act": 1,
+      "label": "Setup / collision course",
+      "approx_pages_note": "Shooting script uses numbered slugs, not page numbers; act boundaries are interpretive.",
+      "dramatic_question": "Which machine reaches John first—and can anyone stop the future?",
+      "summary": "The film opens in the ruins of Los Angeles, 2029: humanity fights Skynet's machines. Sarah's voice-over frames the time-war: Skynet sent two terminators; the Resistance sent a protector. In 1995, the T-800 and T-1000 arrive naked and weaponless, acquire vehicles and identities, and converge on John Connor. John is a foster kid stealing from ATMs; Sarah is locked in a psychiatric hospital after trying to blow up a computer factory. The T-800 intercepts John just as the T-1000 impersonating a cop closes in—first direct battle at the mall.",
+      "turning_point_end": "John and the protector escape the T-1000; John chooses to rescue Sarah from Pescadero instead of running away.",
+      "must_hit_beats": [
+        "Future-war prologue establishes tone and stakes",
+        "Both terminators land and arm themselves",
+        "John established as skilled but lonely kid",
+        "Sarah institutionalized; portrayed as 'crazy' while being right",
+        "First T-800 vs T-1000 fight; liquid metal reveal"
+      ]
+    },
+    {
+      "act": 2,
+      "label": "Confrontation / change the future",
+      "summary": "The trio breaks Sarah out of Pescadero under T-1000 pursuit. Sarah's plan hardens toward murdering Miles Dyson, the researcher whose work becomes Skynet. John and the Terminator force a moral intervention: they stop her from assassination and pivot to destroying Dyson's lab work instead. Dyson, confronted with evidence from the future, agrees to help raid Cyberdyne. The assault draws police and SWAT; the team steals the Terminator arm and CPU from the vault, plants explosives, and flees into a multi-vehicle chase. The T-1000 commandeers a helicopter and later a liquid-nitrogen truck, cornering them at a steel mill.",
+      "midpoint_note": "Sarah cannot kill Dyson in cold blood; mission shifts from assassination to sabotage with (unwilling) insider help.",
+      "turning_point_end": "Cyberdyne is breached and destroyed in principle, but the T-1000 survives and forces a final industrial showdown.",
+      "must_hit_beats": [
+        "Pescadero escape and T-1000 hospital assault",
+        "Attack on Dyson home aborted; alliance with Dyson",
+        "Cyberdyne break-in, vault recovery, SWAT siege",
+        "Highway and foundry chase; T-800 vs T-1000 sustained combat"
+      ]
+    },
+    {
+      "act": 3,
+      "label": "Resolution / sacrifice and hope",
+      "summary": "In the steel mill, Sarah and John are separated from the damaged T-800. The T-1000 battles the heroes using shapeshifting and industrial machinery. The T-800, critically damaged, still intervenes; liquid nitrogen temporarily freezes the T-1000 until it reconstitutes. The T-800's last act is to lower himself into molten steel to destroy the CPU—proving to John that some machines can choose sacrifice. An epilogue jumps to an alternate 2029: Judgment Day did not happen as foretold; Sarah records hope that humanity can build the right machines.",
+      "turning_point_end": "The protector terminates himself to eliminate future-tech residue; emotional closure for John and Sarah.",
+      "must_hit_beats": [
+        "Steel mill cat-and-mouse; Sarah vs T-1000",
+        "Frozen-shatter / re-form escalation",
+        "Thumbs-up / molten sacrifice",
+        "Coda: Washington D.C. park; reframed future"
+      ]
+    }
+  ],
+  "series_thread": "Sequel to The Terminator (1984); this arc presumes audience knows Sarah's prior encounter with a Series 800."
+}
