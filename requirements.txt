@@ -1,6 +1,5 @@
-# Install from repo root: pip install -r requirements.txt
-pydantic>=2.6
-pydantic-ai>=0.0.22
-google-genai>=1.56.0
-python-dotenv>=1.0
-tqdm>=4.66
+google-genai>=1.30.0
+openai>=2.15.0
+pillow>=10.0.0
+pypdfium2>=4.30.0
+python-dotenv>=1.0.1

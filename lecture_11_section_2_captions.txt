@@ -1,0 +1,1835 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+He hooks up everything to Claud bot, and she claims on Twitter, I don't know if it's true or not, that Clawbots started going crazy, started deleting all of her emails, and it wouldn't stop when she told her to stop, she had to run back home and, like, unplug her Mac Mini to kill it.
+
+You know? And then once you plug it back in, she asks you, like, why'd you do that? And you're like, oh, my bad, you're right, I shouldn't have done that. But, like, it deleted her emails without her permission.
+
+Now, is that a true story, or is that fake Twitter propaganda? I don't know, but this is why I didn't do Clodbot yet. I'm waiting for, like, people to be, like, the guinea pigs, and…
+
+lose their email before I make you people, like,
+
+at risk, yeah? So, that was also yesterday, I saw that in Twitter.
+
+And then I think today, Anthropic had some call about… they're creating some kind of co-work agents to help you to, like, invest in banking jobs, other kinds of jobs and companies, so…
+
+Like, the things we're doing here, like, they're already doing that for real, and… yeah. Invest in banking might not be a thing in a couple years. So if that was your career path, you may want to reconsider it.
+
+Just a heads up.
+
+Okay, uh, it is 4.12, we got…
+
+8 to 17 people, counting me, so 16 have showed up today. Awesome, that's a good number for the 5… 4 o'clock session.
+
+So yeah, let's get started. Okay, so, um…
+
+Also, updates. Homework 5 is out. That'll be due, um, on Sunday. And by the way, it's Sunday, 11 a.m. Like, I don't know how many times I would tell this,
+
+People are emailing me, like, a professor, I thought it's 11 PM, can I get, like, submitted, late penalty? I'm like, bro, I made a whole speech about it in class last time, so… no, I need somewhere to, like, differentiate
+
+you know, the top and the middle, so yeah.
+
+11 a.m., getting in on time, okay?
+
+Now, if you got in late, and you're feeling bad, and you're stressing about your grades, first thing is, dude, it's Yale SOM, grades don't matter, right? You're in Yale. Rest of the world thinks you're a Yale graduate in, like, a year or two years.
+
+So, that's fine, right? Doesn't matter your grade. Second thing is, I really care about the project. So, you could have perfect homework,
+
+And if your projects sucks, you're not gonna get a good grade.
+
+Conversely, if you have, like, really awesome projects, like, I'm like, damn, that could be a startup, but you missed the homework here or there,
+
+I factor that in when I grade your stuff, okay? So, like, don't stress about one homework you couldn't get it in.
+
+But, yeah, it is 11AM, please.
+
+Okay? Okay, so for those of you that, uh, just got here, um, haven't ever done online class with me before, um, I actually read the chat, like a Twitch streamer, so you can type in the chat and say stuff, I'll respond to it.
+
+Um, like and subscribe.
+
+No swearing, nothing, no spamming the chat, I don't have a mod, so… I actually do I have a mod? Yen Xiao, are you here, bro?
+
+Is Yen Xiao here? Yeah, Yen Xiao is the mod, okay, Yen Xiao, you're the mod today. Anybody can start spamming a chat, just kick them off, okay?
+
+Alright, and yeah, class is more fun if you, like, type in the chat and stuff, like, an actual stream, so don't be shy to, like, talk.
+
+I find, like, in these online classes, people, like, don't talk in class, because they're shy, or, like, maybe, like, English is not your first language, you know, you feel, like, self-conscious.
+
+On the chat, they let it rip, you know? Like, they just full-blown talking and everything. It's awesome. So, yeah, if you're, like, quiet in class,
+
+Today's data to, like, shine on the chat.
+
+Alright, um, let's see.
+
+Any other questions before we begin the lecture today?
+
+Nope. Alright, let's get the party started.
+
+Alright, so y'all see my, um, slides?
+
+see a big robot that says Retrieval augmented Generation?
+
+Yeah, let me know in the chat.
+
+or thumbs up, thank you, Richard. Alright.
+
+So, today I want to teach you how to take your chatbot,
+
+But at this point, you can do what? Your chatbot can chat, right? It can memorize your chat history, cool.
+
+They can search the web, cool. It can write code, cool. It can call tools that are custom things, it can fill out forms, it can click buttons, okay?
+
+But one thing your chatbot can't do yet…
+
+is ingest, like, a thousand pages of text.
+
+Okay, so what if you have, like, maybe… maybe you're, like, Yale Admissions, right? Yale SM Admissions, and you get these, like, applicants. Maybe, like, uh…
+
+10,000 applications come in, right?
+
+Now, what's the application? It's your resume, it's your, um…
+
+saving a purpose, your essay, it's your reference letters, like 3 letters, it's your grade transcript, right? It's like 6…
+
+text files, right? But there's thousands of you people, maybe 10,000 apply to Yale of Salin.
+
+Wouldn't it be cool if an AI, right,
+
+I'll just call it admissions AI, could access all those 10,000 documents and search them in a clever way,
+
+So now I say, you know, give me all the people that applied from Oklahoma.
+
+As all the Oklahoma people, and looked at their things, it tells me, amongst Oklahoma, these are your best candidates, here's why, you should admit them.
+
+Wouldn't that be cool? That'd be awesome.
+
+Except, how do you fit 10,000… actually, it's 10,000 times 6, right? So it's 6 files, your letters, and everything. 6,000 files into the prompt.
+
+And why stop at $6,000? Why not, like, a million people apply? Or, like, 10 million? So…
+
+Can you fit a million or tens of millions of documents into your chat and have it access them in an intelligent way?
+
+The answer is, yeah, you can. And the technique is called retrieval augmented generation, which I'll yap about today, and then we're going to make a chatbot that does this retrieval augment generation thing,
+
+And the documents you're going to use are in Yale admissions things. It's gonna be the Harry Potter books.
+
+Yes, I found all 6… the 6?
+
+No, 7. All seven Harry Potter books, and one giant PDF file, it's 3,000 pages.
+
+We're gonna shove that into our chatbot today, and ask you questions about Harry Potter, right?
+
+Okay, so let's get started here.
+
+Okay, so the reason you can't shove…
+
+All the Harry Potter books into your chatbot's window is that window has a limited size, okay? It's called the context window, and they've gotten bigger over the years.
+
+But today, they have a limit. So I checked with the AI, I asked her, like, yo, how big is your chat, uh, context window, Gemini? And Gemini told me it could fit a million tokens into the window.
+
+Okay, million tokens. That's, uh…
+
+I asked it how many pages is that of text, because I don't understand tokens, but I get text. 1,500 pages.
+
+Okay? My Harry Potter book is 3,000 pages. Well, all the books, right? So, yeah, you can't fit the whole…
+
+thing into the prompt in one shot.
+
+Okay, so, uh, maybe you wait a couple of months, and the token window, or the contact window size is 3 million, 10 million, gets bigger and bigger, right?
+
+Even if it was, I still wouldn't recommend you do it that way, okay?
+
+First reason is, you shove in, like, a million pages of stuff, okay?
+
+And then you're like, hey, yo, can you, like, find me the page where Snape crashed out? Okay?
+
+Like, maybe it can't find it. Like, maybe it's buried somewhere, and it gets lost in the middle of it. So…
+
+AI maybe can't, like, find everything.
+
+But then you're like, oh, forget about that, professor, just wait a couple of months. Gemini 4 can totally do it, right? It's like a genius.
+
+Okay, cool, but then you gotta shove in, like, a million tokens,
+
+Every time you talk to her, right? You say, hey, what's up? Million tokens. Find the Snape thing, million tokens. Find the…
+
+you know, what's the guy that runs Hogwarts Call, the old dude?
+
+The wizard guy? Uh…
+
+What is it? Well, my brother's here. Yeah, Dumbledore, right? Find me Dumbledore stuff, right?
+
+a million tokens, and remember, that costs you money, right? Million tokens was, like, what, a dollar or ten? Every time, you know, it just… and it's slow, too, like…
+
+Putting it that much to the AI takes time to process. So it's like, even if you could, and AI's smart enough,
+
+Still, it's a bad idea, right? Better to, like, put in selective pages of books,
+
+that are relevant to your query. And that's what we'll try to do today, right? We're not going to query all 3,000 pages, all 7 books, we're gonna…
+
+Find, like, 10 pages that are relevant to the question I'm asking.
+
+Okay, so to do that, we're gonna use this thing called retrieval augmented Generation, or RAG for short.
+
+Okay? So the rag lets you do selective querying of the documents to answer your question.
+
+No, the name, it kind of describes what it does, so it's retrieval…
+
+augmented generation. So retrieval is retrieve documents, right?
+
+And then aug method generation, we're going to augment the generation process, which is generating text to answer my question,
+
+with the retrieval of the documents. So, R-A-G, RAG, okay?
+
+So the way you do it is, you take that book, right, or those 7 books,
+
+and you store them in a database, right? Just like last time, you could put things in databases in MongoDB.
+
+But it's a very special kind of database, okay?
+
+And that database starts because once you put the pages in there, it can search for the pages that are relevant to you,
+
+very, very quickly, okay?
+
+Now, what makes this all work, uh, is the idea of a text embedding. So I think we talk about this a couple of weeks ago, right? That all AI does is take your text and embed it. And embedding means turn your text into a bunch of numbers, right? Numbers are, like,
+
+the coordinates on a map, right?
+
+So, yeah, it encodes them in a way that the embeddings have, uh, semantic meaning. So, all the things about Snaper over here, all the things about
+
+What's his name? Uh, Hagrid?
+
+Hagrid isn't the guy that runs the school, he's, like, the janitor, right?
+
+Am I right? Yeah. Dumbledore.
+
+Dumbledore over here, Harriet over here…
+
+Uh, nursing says XD. What is XD? What are you talking about?
+
+Anyways, it'll separate them, right? And the database to find those documents about your query very quickly.
+
+So, here's, like, an example of how it kind of works. So…
+
+What I did here was, I just, uh, made some example documents, so I wrote some things about, uh, steak,
+
+And avocados, and pizza.
+
+Okay? So, like, if you can kind of see in the plot here, like, for that orange thing, that's a stake.
+
+uh, cluster. It says, like, grilling a thick steak creates a wonderful smoky blah blah blah, right? Some document about steaks.
+
+So I tabbed the code,
+
+Take those documents, right, and embed them one at a time. So make them, like, a big vector, like AI does. Then I took the vectors and basically projected them into two dimensions so you can see them.
+
+And you see here, right, when I project you into dimensions,
+
+The stakes are over on top, the pizza's in the bottom left in the purple, that's pizza, and the blue thing there, that's, uh, avocados. Is it avocados.
+
+Yeah, the versatile green fruits pack with blah blah blah. That's avocado stuff.
+
+That is, uh, purple is pizza.
+
+Fresh pizza with… meh… what did I say? Well, whatever. It's fresh pizza stuff.
+
+So yeah, pizza, avocados, and steak.
+
+So, now think about how the rag would work, right? So, this is your database. It's, like, stored your documents this kind of way, so it understands, like, pizza's over here, steaks over here,
+
+avocado's over here, and ask it,
+
+Yo, what's so special about pizza?
+
+Right? It'll take my query, which should be embedded close to the purple dots. Like, if things work,
+
+What I said to her, what about pizza? It's gonna be close to the purple dots. Then the database, like, figures out, okay, here's your query.
+
+Here are the top 10 closest documents to your query.
+
+picks them up, right? Gives them back to the AI, like Gemini, and Gemini says, okay, here's the chat history, here's what I said there, what about pizza?
+
+Here's some docs about pizza, and then it answers your question.
+
+Okay? So that's how it kind of works.
+
+Another cool thing, to make this plot, you know how I did it?
+
+Did I sit there and, like, write down some documents about pizzas and avocados and steak, and then write some code to embed them by the AI, and write some code to make it 2D, and some more code to make the plot and stuff?
+
+Hell no. I just told the cursor, yo, can you, like…
+
+Write some stuff about avocados and pizza and steak,
+
+and then embed them, and then put them in 2D, and then make a cool plot, and the plot make the background black, like it's outer space, and…
+
+cool, like, colored and stuff. That's all I did.
+
+So, this used to be the job of a data scientist.
+
+Right? Data scientists give them all this text, they would, like, create this plot for you. And they get paid, like, a good salary doing it.
+
+plus benefits, plus paid time off, you know, all the things.
+
+And now it's like, I just told the cursor to do it, and in 20 seconds, it was done. I mean, like, it wrote the code, ran the code, saved the plot, I'm like, whoa, that was awesome.
+
+So, yeah, AI is getting smarter, and um…
+
+Data scientist, that job is probably not going to be there for very long.
+
+Okay, so…
+
+How did I embed the text into the vector, right? I said I took the text and told the AI, hey, make this thing into a vector, it's how do I do it? Well, I used an embedding model that they have in Gemini.
+
+So, their model's called the newest one, I think it came out this month, actually, so it's brand new. It's Gemini Embedding 001.
+
+And, uh, if you don't like Gemini, or maybe you're one of those few people that can't get your Gemini key to work, don't stress.
+
+OpenAI has one too, with their error embedding model, and I think Claude has one too, so everybody has it embedded model. It's a very common thing they all have.
+
+How big is the embedding? Because I think the default size for Gemini is a dimension of 768.
+
+So when you embed it, you get 768 numbers that describe your text.
+
+Now, that's, like, the minimum size, but you can make it bigger, so I think in Gemini, you can make it as big as 3,000, I think.
+
+And the idea is, like, if it's a bigger embedding, it's a better understanding of the text.
+
+I find for, like, our Harry Potter kind of example today, 768's totally fine, so don't waste your money for, like, 3,000 dimensions.
+
+And the Python code is right here, in case you're curious how it works, so…
+
+Um, I call the client… client is the Gemini API client.
+
+Uh, models, embed content. So they have an embed content, uh, function in their API. I gave it a model, so it's the Gemini001 model.
+
+I gave it the contents, that's all my text, like that page of Harry Potter.
+
+Then I configure it, so the, uh, the task is retrieval of document. So that means, like, embedded in a way for finding things in a…
+
+you know, in some rag kind of thing.
+
+And then the dimension is 768, and then it just embeds it, and there you go. Get your numbers, and you're all set to roll.
+
+Okay, now…
+
+How do you actually embed it? Like, do you embed the whole book? Do you embed a chapter? What is, like, the logic here?
+
+So, like, you want to take your book, and you want to chunk it up into smaller pieces.
+
+A page is usually good.
+
+How big is a page? Eh, it's like a couple hundred tokens, right? So what it does is it'll actually take your whole, um, Harry Potter books and make it chunks of pages,
+
+But, like, the chunks overlap a little bit.
+
+A little bit of overlap, right? Because sometimes if, like,
+
+Dumbledore is talking on page 55, and it goes to 56? Like, you should cut off Dumbledore in the middle of a sentence, right? So again, they kind of capture the whole thing, or make it more likely to have the whole thing captured, nothing cut in the middle. We make them overlap a little bit, okay?
+
+Uh, it costs more money,
+
+But it's a more robust way to encode things. So, yeah, you chunk it up, make the chunks overlap,
+
+And then you embed all the chunks one at a time, and then you have a bunch of vectors, okay?
+
+So then, you got your vectors now,
+
+where do you store them?
+
+Okay, so you store them in a thing called a vector store, right?
+
+So, a vector store, it's just a database.
+
+I mean, actually, it's a collection, technically, so it's like a table in your database.
+
+But it's just, like, a normal table, so it has just entries and fields and data.
+
+Um, what are the fields you store in there?
+
+The actual content, right? So the text, you embedded the page of Harry Potter,
+
+Um, maybe it's some metadata, like the page number, usually useful to put in there. So I put in page numbers.
+
+Uh, maybe, like, a summary of the page, like a one-sentence blurb if you want to make things even better. That's optional.
+
+And the vector itself, so you store those 760 numbers in that element, okay?
+
+So at that point, that is just a regular collection in MongoDB. Nothing special about it. It's not a vector store yet.
+
+To make it a vector store, you have to actually make this database
+
+be able to search for stuff very quickly, okay? So when I say to it, yo, tell me about avocados, right? It's gotta find the top 10 closest things to it.
+
+So, like, how would you do that in practice? I mean, if you're, like, kind of naive about it, you'd be like, okay, so I got 10, let's say it's 10,000 documents,
+
+10,000 documents here, with coordinates, and he says avocado, which is over here.
+
+So I'll check every single document one at a time to see how far it is from the query.
+
+And then find the top 10 closest ones, and give those documents to the AI for answering the question.
+
+So, you could do it that way, and if you did it that way, it'd be super slow.
+
+Like, maybe for 10,000 documents, it's…
+
+fast enough, but what if you have a million?
+
+Or 10 million, you know? Like, that process is really, really slow.
+
+So, a better way is, they actually invent some really clever ways to search your database
+
+For, like, the closest things to you super fast, okay? So there's two main ways to do it.
+
+Um, they got, like, long technical names, so one here is called…
+
+Uh, hierarchical, navigable, small world, or HNSW.
+
+For some reason, I see that. I think NSFW, like, not safe for work, so I'll just call this the not safe for work method.
+
+Uh, how does it work? At a high level, it basically takes your document that are, like, dots in the space,
+
+And it, like, connects the closer ones to make, like, a network or a graph on the documents, and then it finds your thing by searching on this graph.
+
+In a very quick way, okay? What are the details? It's like a very computer science kind of thing.
+
+Don't worry about it, right? It's a built-in function in these, like, vector stores.
+
+So that's one way to do it. Another way is called inverted file index. Um, this method's also, like, a technical thing.
+
+But the difference in two methods is, if you want something, like, hyper-fast lookup,
+
+Um, you want NS, the not-safe-for-work method.
+
+Okay? If you want, like, something that, uh, requires less memory, because the first method with the not-safe-for-work, that big…
+
+graphics. It takes up a lot of space and memory, so it's like a memory-intensive thing. The other method, inverted file index, or in vitro fertilization, IVF.
+
+That's much, uh, less memory-intensive, a little bit slower, okay?
+
+Um, when we do it today with our application, we're going to do this in MongoDB, the one we know and love. Their default is the not safe for work one, so they're gonna use the fast one with the…
+
+Takes a bit more memory, but it's not gonna be a problem for us. Our documents are, like, just pages, so not an issue at all.
+
+Okay, so they got some built-in search method to find your documents super fast, okay?
+
+And again, there's many, like, vector services out there, there's Pinecone, there's Chroma, there's Milavis.
+
+And there is MongoDB. So since we used it last time and took all the trouble to set up
+
+the cluster and that little, like, MongoDB URI, all those annoying things, and…
+
+you know, get the IP address whitelisted and put in the user account, all the hard work you did last time, we're gonna…
+
+build off of that, so they were going to use MongoDB for the vector store, okay?
+
+All right, um, now the RAG workflow. So, when I do a RAG query, how does everything work? Let's just kind of go through it one more time, step by step.
+
+So I give a query. What's so special about pizza?
+
+Okay? That in the code, right, your code will actually take my query and embed it with the Gemini embedding model, right? So now I got a bunch of numbers.
+
+send the numbers to the vector store over in MongoDB, and it says, yo, find the top 10 documents that are closest to this query. So it searches the documents, but its, like, whatever trick it does to find the things.
+
+10 plus documents, get their content, give it back to the code, right? It's now you got the conversation history, you got my query, what's special about pizza,
+
+And you got a bunch of documents, maybe things like pizza is delicious and satisfying, nothing beats a slice of pizza,
+
+Pizza brings people together like nothing else, right? All in the chat context.
+
+Then you give it to Gemini, call Gemini Model 3, it reads all the stuff, and it says to you,
+
+Yeah, pizza is tasty and bring us together.
+
+And that's how our rag works, okay?
+
+So it means, like, the embedding process, you embed all the documents one time, that takes, like, a minute or two,
+
+A lot of embedding there. Embedding, like, a thousand, two thousand, maybe a million things.
+
+After it's embedded and stored, when you talk to the AI, it embeds your message
+
+every time you talk, okay? So, that's the embedding you there.
+
+So, Namachi gets you concerned, like, that could get very expensive, right? If I'm betting, like, a million documents, and I'm betting every message that comes to me,
+
+Yeah, it'll cost you money, but, like, not that much money.
+
+So, the prices I checked for embedding stuff…
+
+Um, there is a free tier in Gemini, but you're gonna hit that very quickly because it's…
+
+1,500 requests per day.
+
+And if you request, like, 1500 pages, you're gonna max out quickly. If you pay for it, um, it's…
+
+15 cents per million tokens.
+
+Okay? A million tokens is like a thousand pages, so to embed all the Harry Potter books might cost me…
+
+maybe 40, 50 cents.
+
+Okay, I know it was one time only, to embed everything.
+
+Now, there's ways to do it even cheaper than that. There's a thing called batch API.
+
+So, what does batch mean? Uh, regular API queries like, yo, tell me about pizza, embedded now, give me the vector now, so I can answer the question. I'm in a rush, right? That's a regular API.
+
+But if it's your vector store, you're, like, populating it.
+
+You're not in a rush, right? You're like, yo, just do it when the computer's free. So, that's like, let me take all your, like, things in one batch, I'll give it to the AI, it'll, like, do it, like, whenever it's free,
+
+And then upload it. So, like, you have to wait maybe a couple of seconds for, like, to do batching.
+
+But it's way cheaper. It's, like, 50% cheaper to batch uploading than, like, regular… batch embedding, sorry, versus regular embedding. So for our vector storing, like putting things in there,
+
+We'll use a batch, uh, updating, or batch embedding, to make it cheaper.
+
+Okay? Again, if you can't use Gemini, OpenAI at very similar prices, I think they're $0.13 per million tokens, but exact kind of batch discount they have there, 50% off.
+
+Okay, so either one works. Today's code is all Gemini, because OpenAI sucks,
+
+And Gemini is just way more fun to use.
+
+Alright, so now let's talk about the details of his actual MongoDB vector store, right? So when you actually put your stuff into the database, what does it look like?
+
+Okay? So, here's an example of a vector store I created.
+
+Uh, this is for a case one of my colleagues, named Rick Ansell wrote. It's some accounting case.
+
+His case has, like, 2 pages of actual text talking about the case, and then 50 pages of, like, boring accounting charts, like…
+
+cash flows and earnings, and blah blah blah, and what the hell these things are, right? 50 pages of them. And they're tables, not even, like, text, like Harry Potter, they're, like, structure, you know, objects.
+
+So, I made him, like, a case simulator. It tells me a case about Nathan's Hot Dogs, I don't know, like…
+
+I guess the Nathan's Hotel Company gave out a dividend to shareholders, and it…
+
+cost him some money, and people are freaking out, and some accounting, like, about equity and this and that.
+
+Anyway, so Rick was like, can you make, like, a case similar? Like, can you make it so, like, I could talk to, like, Lisa about the case, or talk to, like, the people in the case, like, talk to them about the reasons, like, the company CEO, the analyst, whatever?
+
+I says, yeah, give it a shot, bro. So I basically took our code from last week, the chatbot,
+
+I just built a vector store for it.
+
+Now, his vector store is a little bit trickier than this vector store for Harry Potter, because he's got tables, right?
+
+So, raised vectors, so what it did was…
+
+I took all the 50 tables, right, 50 pages, and I basically took a picture of it,
+
+Give the picture to Gemini and say, yo, here's a table,
+
+Write this back to me in HTML, like code for the table structure, like rows and column stuff.
+
+And then I embed the actual HTML in the vector store.
+
+So if you see here in this, like, object in the VECR store, this is one of the elements they put in there.
+
+It's got the case name, it's got the page number, that's your metadata.
+
+actual contents there, just, like, tag P, Yale School of Management, forward slash tag P. That's HTML code, right? That's like turning the tables, or whatever the case data was.
+
+in HTML, so that I can understand it.
+
+I put a summary there of the case, examines, blah blah blah. So basically, for me, I summarized every document with a summary to make it easier for, like, me to understand when it pulls a document, what it pulled.
+
+For Harry Potter, we're not gonna do that, not necessary, but an option for you to make your database, like, more easily understood for the user.
+
+And then here is the content vector, right? Content underscore vector. That's what I call the content vector column.
+
+And the dimensions 768, and there is all those numbers right there stored, okay?
+
+So when you put your data into your vector store, that's what you're putting. The actual content, the content vector, and some metadata. For Harry Potter, the metadata will just be the page.
+
+Okay?
+
+Okay, so once you put it there, right, it's a regular MongoDB collection, now you gotta make it a vector store.
+
+So, the way you do that is you put an index on the vector store, okay? So the index is, like, it tells it, essentially, this is a vector store, use all your fancy algorithms, like search for stuff that's closest to the query,
+
+And they do that via an index, okay?
+
+Okay, so to put the index on it, what you do is, you go to MongoDB,
+
+Um, after you create the database, right?
+
+And you create… you put the documents in the database, right, in the cluster, the collection,
+
+You go to over the left side, and you click Search and Vector Search.
+
+Okay, so click that.
+
+Then this window opens up,
+
+create a vector search index, okay? So you can pick your type of search. You can do Atlas search or vector search.
+
+For us, we want that, like, embedding-based AI kind of search, so you want to pick vector search, okay?
+
+Specific vector search.
+
+Then you gotta tell it… give it a name for the index.
+
+So I think the default name is Vector Index. Just call it that, because your code looks for that index name when it does all the rag stuff, so…
+
+Vector index is a name.
+
+Pick your database and your collection. Your Harry Potter books, where'd you put them? So, you basically, they'll put all your…
+
+collections here, you click one, find your collection, and put it there.
+
+And the last step is, you have to actually configure the index. So you can configure it two ways. There's a visual one, and there's a JSON one.
+
+And I'll be honest, and I did this, I was like, what's this?
+
+I asked the AI, what's this? It said, oh, that's the JSON configuration. It gave me the JSON configuration code, if you see it here. It's like fields.
+
+type, vector, path, content vector, that's, like, the column where the actual vector sits, those numbers, right?
+
+num dimensions, 768, that's how big the vector is. Similarity, cosine.
+
+So here, like, similarities, how do you measure how close or similar two documents are?
+
+So there's a couple of ways to do it in, like, machine learning. One popular way is called cosine similarity.
+
+Okay, so if you forgot your trigonometry,
+
+The cosine of an angle is, like, um… like in a right triangle, right? The cosine is like the…
+
+adjacent size, like the bottom side, the divided by the hypotenuse.
+
+But more intuitively, if you got two, like, vectors that are pointing at right angles, so, like, this…
+
+like at a square, their cosine is zero.
+
+they're not similar at all.
+
+If they pointed in the same direction like this…
+
+then the angle's, like, close to zero, like that. The cosine's, like, 1, they're very similar.
+
+So, that's how cosine similarity works. If things are, like, similar, they point in the same direction,
+
+their dots that are close together, kind of, and they get a higher similarity.
+
+So yeah, we'll pick cosine similarity.
+
+There's other ways to measure similarity you can check out on free time, but for our purposes, cosign,
+
+is good enough. So you just basically take this thing here, and you copy from the cursor, paste an adjustment editor, and boom, create the index.
+
+Okay, alright, so that's all you do to make your vector store, and we'll do that today. I think we'll get through it in time.
+
+Power real-time?
+
+We have, what, uh, 20 and 20?
+
+I got 50 minutes, right? Am I right? 5 therapy finish?
+
+Yeah, okay, you've got plenty of time. So, we actually created this vector store today.
+
+Alright, question in the chat from Shemi.
+
+What happens to the embedding of a named person when the name is mentioned? It's easy to retrieve, but if the text uses him
+
+person, how will… okay, good question.
+
+Why is ChatGPT so smart? Because it has context-dependent embeddings. So, it knows what HIM means. When I say him, right? Him whoever. So…
+
+It's fully aware of the context around it, and that's why the embeddings will always get back the right documents for your query.
+
+When I say Snape,
+
+Right? What did he do here? And they find him mentioned somewhere. The context around him in the paragraph of that page probably tells you it's Snape.
+
+And that's how it finds it.
+
+Okay. Okay, any questions about rags?
+
+how to deploy them or anything before we begin building it today?
+
+Nope. Alright, by the way, if there's, like, a book you want to embed in the class today, um, we could try that if we have time, so find me the PDF.
+
+email it to me, and I'll try to embed it, if we have time in the class, okay?
+
+But that being said, no further question, let us begin the vibe coding part of class. Alright, so let me stop sharing this.
+
+And now I'm going to share my entire giant monitor.
+
+Now, you tell me if you can see it or not.
+
+Okay, so now we got everything there.
+
+Now, it might be hard to read the text exactly, so when we get to actual, like, finer detail, I'll change my sharing pattern, but right now, we'll just keep it like this.
+
+So, yeah, I have cursor open, then I have a web browser here, then all of y'all are blocking my view.
+
+Yeah, okay. Web browser here…
+
+Uh, let's go to the course page.
+
+Okay, today's is Lecture 11.
+
+So, today's lecture, I actually have two different repos. I have a vector store upload repo. That's gonna, like, that's code to actually push your code… your…
+
+Harry Potter book into your vector store.
+
+And I got a separate repo for the RAG chatbot app. So a chatbot… basically, it's last week's chatbot with a RAG functionality connected to your vector store, okay? So two separate repos. So we're gonna clone
+
+Two things today. So let's do that together now.
+
+So let me, uh, kill whatever I was doing in cursor before.
+
+open up the folder, and make you folks a folder for yourselves.
+
+Alright, so let me go to Lecture 11 here.
+
+Actually, let me make the folder the old-fashioned way.
+
+use the, um, File Explorer.
+
+Okay, Lecture 11.
+
+And I'll make a section 2 folders, a new folder…
+
+Section… 02.
+
+Okay, got a folder, it's totally empty. Let's open it up inside a cursor.
+
+So, open folder…
+
+Lecture 11, Section 2.
+
+Awesome.
+
+All right, cursor is in.
+
+So, today we'll do things a little bit differently.
+
+So usually, right, we basically want to, like, clone a repo, clone all the code inside the folder, right? So it's like git clone…
+
+The URL of the repo, and then a period.
+
+Today, I got 2 repos, right?
+
+So what I want to do is I want to actually clone the repo with its own folder inside this, like, bigger folder.
+
+So, let's try the vector store upload first.
+
+So actually, I'll click, uh, GitHub here to get the repo open.
+
+Okay, so PDF to MongoDB Vector Store. Let's clone that repo in this folder for Section 2.
+
+So I'll copy the code URL, green button, copy it.
+
+Okay? And then I can clone this a couple of ways. So, I can clone it myself, or I can clone the AI.
+
+What do you feel like today? Me cloning it, or AI cloning it? Let me know in the chat.
+
+We're doing AI cloning, or me cloning it?
+
+Okay, Cola says AI, AI, okay, AI, let's do AI. So, yo…
+
+clone this, and paste the repo, that's it, right? It's yo, Columbus.
+
+It should know what I mean is, clone the repo into its own folder inside the folder you're in right now.
+
+Maybe you'll get it wrong, I don't know, but it worked in the last section. So here we go. Yo, clone this.
+
+Okay, it's doing its thing. Let's get the file panel open.
+
+Yep, there it is, Vector Store Upload.
+
+Beautiful. It's its own folder, okay?
+
+While we're here, right, we got a second repo, we got the chatbot, let's clone that one too. So…
+
+Let me close these. Back to the course webpage, right? Lecture 11. The second repo is RAG.
+
+chatbot app, right? That's a React app, they do a chatbot.
+
+Okay, there it is again, chatbot up, Harry Potter Rag, plus Lisa AI. Yep, we love that.
+
+copy the code, back to the chatbot, or the AI, and say, yo,
+
+clone this tooth. Boom.
+
+Okay, and let's phone and everything there.
+
+All right.
+
+is cloned, I see chat app rag there.
+
+Awesome. All right.
+
+So, uh, yeah, let's, uh, first, let's create the vector store for you guys. Let's put Harry Potter in there.
+
+And then we'll run the chatbot, and then do our thing, okay?
+
+Now, I'll find this… save us some time,
+
+You should open two instances of cursor on your computer. So, like, here's my one instance.
+
+I'll open this in the folder of the chatbot. So first, I'll go to the chatbot.
+
+So, open folder, uh, section 2…
+
+chatbot, or chat app rag, open that.
+
+Okay, why am I doing this first? Remember npm install, like, the install takes a couple of minutes?
+
+I don't want to wait a couple of minutes, I'm gonna basically run in here the install. So…
+
+Let's go to my terminal…
+
+And this is, yeah, chat app rag.
+
+So, open up the chatbot rep repo, and then get a terminal, and just type npm install.
+
+Stop. Yeah.
+
+Okay, it'll download the node module packages, take a couple of minutes, let that run while we actually run the vector store repo in a different cursor instance, so…
+
+Let it do its thing, minimize it,
+
+Okay, then see if you can open another cursor on your computer, okay?
+
+If you can't, then just open up the repo for the Vector Store. If you can, it'll save you some time when you run the chatbot at the end of class.
+
+Okay, so here is cursor again.
+
+open a project,
+
+Okay, now I'm going to open the Vector Store. So it's…
+
+Desktop…
+
+Spring 2026…
+
+Lecture 11…
+
+Section 2… okay, Vector Store Upload. That repo, I want y'all to open it.
+
+Okay.
+
+Okay, so we're here. Got a brand new code.
+
+Okay, now remember, when you get a new repo, I like to start off by just asking the AI, yo, what's this do?
+
+So, yo, what's this dude?
+
+Let's see a cursor tells us today.
+
+Waiting for extension host.
+
+What does that mean? Is my AI busted today?
+
+Uh… okay, playing next moves, okay, it's working.
+
+I think.
+
+Okay, thinking, reading, okay.
+
+What it does, reads a PDF, Harry Potter collection, extracts text page by page, so first it reads the books and gets all the pages out of it.
+
+Then it chunks the text into 500 token pieces with a 50 token overlap, so every chunk is 500 tokens, they overlap 50 tokens, so…
+
+10% overlap.
+
+It embeds the chunks with Gemini, Gemini model, or Gemini Embedding 001.
+
+Okay, so the bed's my stuff, and uh…
+
+768 dimensions, awesome.
+
+Uh, then it writes to MongoDB Atlas, it ragdocs.harrypotter with chunk ID, text, page number, and embedding.
+
+And then it creates a vector index for cosine similarity search.
+
+And that's awesome. Okay, so that's what it does, right? Takes our PDF, reads it up, and does everything.
+
+The PDF, I can show it to you here.
+
+the data…
+
+Oh, by the way, can you read, like, the things in the cursor chat? Like, is it too small a font? Because if it is, I'll make it just cursor, it'll be the window.
+
+Let me know in the chat.
+
+I'd prefer to have, like, one screen, because then I can show you the web browser, and PDFs and everything in one shot, but I know, like,
+
+On a big monitor, it's hard to read on a small monitor.
+
+Should this search, you can read…
+
+Um, okay, so one person can. Any cants out there, if you're a cant,
+
+Like, you're probably more important to tell me that, so I can change things.
+
+Blessings is small. Yeah, that's what people said.
+
+Okay, nursing, chill out, I will…
+
+go to, like, single screen mode in a second, but for that…
+
+Let's just look at our Harry Potter book. I'll make sure it's the whole thing, right? So it's Harry Potter, the complete collection, J.K. Rowling,
+
+How many pages? 3,623. Damn, that is a big, big PDF file.
+
+Uh, are the books there? Let's scroll through it.
+
+Harry Potter, Sorcerer's Stone, Chamber of Secrets,
+
+Prisoner of Azkaban, Goblet of Fire, Order of Phoenix.
+
+Half-Blood Prince and the Deathly Hallows, cool, they're all there.
+
+Contents, Chapter 1, let's see…
+
+The boy who lived.
+
+Mr. and Mrs. Dursley of No. 4 Prevette Drive,
+
+We're proud to say that they were perfectly normal. Thank you very much.
+
+Awesome. By the way, I have never read the book before in my life. Like, I watch the movies, but this is my first time reading the Harry Potter book in my life, so…
+
+Cool, you're here for my very special moment in my life.
+
+And this is 3,000 pages? Who the hell reads this stuff?
+
+My god, man. Okay, anyway, that is the Harry Potter PDF, um…
+
+Alright, so now let me switch to just cursors so y'all can read it, and we'll, like, kind of get this configured up here.
+
+So, back to my, uh, Zoom thingy.
+
+That's not…
+
+Oh, there we go. Yeah. Stop the sharing…
+
+Now let's share the right cursor.
+
+Because I got two of them now, right? It's…
+
+Vector, yeah, it's that cursor.
+
+Okay, for those that couldn't read, is this better?
+
+Let me know in the chat.
+
+Or don't tell me in the chat, that's also fine, I'll just assume you can read it.
+
+Okay, Cola says yes, cool.
+
+Alright, let me make the chat bigger, maybe?
+
+We will need the code, really. Here's a code, if you're curious. So it's a lot of Python code.
+
+Okay, I mean, maybe it's worth looking through it one time to kind of understand the basics of how this works.
+
+Okay, so…
+
+We got PDF Path. Actually, let me copy this stuff into the, uh…
+
+the chat, so that you can see what the stuff is here.
+
+Okay, so first couple of lines, we got the PDF path. That's where your PDF file sits, you want to embed.
+
+Um, chunk-sized tokens, how many tokens per chunk. We doin' 500.
+
+The overlap tokens, 50.
+
+Uh, embedding dimensions, 768, we have to tell Gemini that.
+
+Uh, your batch size, 50.
+
+Oh yeah, one thing here. So remember the batch thing is, like, cheaper, right? So we're gonna actually give these chunks to the AI,
+
+50 at a time to make it faster, right? So instead of, like, pinging the AI, the Gemini for embedding it one at a time for 3,000 pages,
+
+We'll do 50 at a time. That is, like, one query to the AI. And that's important because I learned last night the hard way, that Gemini API has a lot of rate limits.
+
+So now I'm embedding one page after another, right? You have to, like, wait, like,
+
+There's a limit of so many queries per minute.
+
+Okay? I was hitting the query very quickly,
+
+But if I do a batch of 50 at once, that's one ping to the API. So it's like, oh.
+
+Awesome. So, I might have to ping it, like, maybe 60 times, versus, like,
+
+3,000 times, okay? So, batching.
+
+Uh, batch delay seconds, so in between the batches, it, like, sleeps to not overload the API. It does 2 seconds, yeah? That means the whole embedding might take, like, 2 minutes to embed your thing.
+
+max retries. Okay, sometimes, like, you get an error, like, the thing runs, API's got a bug, or lost connection, the AI coded in, like, retrying it again.
+
+Over and over again. Uh, DB name is Rag Docs. Okay, so…
+
+This code's gonna create, on your MongoDB, on your cluster, a database called ragdocs. It's the documents for your RAG stuff.
+
+Okay? Then it's gonna make a collection, and I'll put this also in the chat, so you can see this stuff.
+
+It's gonna create a collection called Harry Potter, for the Harry Potter book. Then it's gonna make a vector index called vectorindex on it,
+
+And those are the MongoDB configurations we're gonna need for the code, okay? Now, for me, I've already made the Harry Potter, um, collection. I made it last night for the chatbot, so just to, like, play along with y'all, I'm gonna make a new collection called…
+
+Harry Potter section…
+
+Section… 2.
+
+Okay, so I'll make a brand new collection and re-embed the whole thing, and pay the 50 cents to embed it again, just so I can, you know, be part of your experience as we do this today.
+
+Okay, so those are the configuration things, done a lot of code to, like…
+
+extract PDF to string, so first take your big PDF of 3,000 pages, make it one giant string in Python, okay, that's this thing here.
+
+Uh, chunk by token, or… yeah, chunk it up, right?
+
+Oh, a chunk ID.
+
+So, here's one thing I learned last night. So, I was running it, right? And then it says, oh, you timed out, you're maxed out your pings to the API, and the code dies. But I've embedded half the book already.
+
+Right? Do I gotta re-embed all that stuff again?
+
+No, because the code is smart. What it does, it takes the page, right?
+
+And then it creates, like, a unique ID for that chunk.
+
+Okay? The chunk is also stored in the database, in the Harry Potter collection.
+
+What happens is, when your code dies, maybe something happened,
+
+When you restart, it checks that database in the collection, finds all the chunks already in there, okay? If a chunk is in there, when it's, like, embedding it again, it'll skip it, so it'll save you time and money.
+
+So, the code's very, very robust. I'm like, this AI is awesome, the stuff it writes.
+
+Um, yeah, so that's embedding, and then we embed and upload the batches, a lot of boring code here.
+
+Who cares, right? It does the trick.
+
+So, to run this thing,
+
+First, we have to install the requirements.
+
+Okay? Then we gotta configure all the .env stuff, and then we gotta run it. So…
+
+Let's first do our requirements, right? So, I forget the command, as I'm sure you forgot it, in Python.
+
+So let me just ask you, yo, how do you install…
+
+requirements. For those I forgot.
+
+It's… ah, it's pip install dash… whatever, it's this thing here, copy it.
+
+Okay, now I'd recommend you go to your terminal, okay, so, like, terminal thing here in the middle,
+
+Get a terminal, and paste that command.
+
+pip install dash requirements. What the hell? I'll put in the chat.
+
+if you want it there, and run it.
+
+Now, for me, it'll do nothing, because I ran this last night, I installed everything already,
+
+For you, this will take, like, a minute to install all the packages, okay? So hopefully, it's installing, no problem.
+
+Lookie, while it's installing, let's set up our .env file, right?
+
+So let me ask it.
+
+Yo, what do I put…
+
+and .env to run this.
+
+Okay, it says I need a Gemini API key and a MongoDB URI.
+
+Okay? So, again, these are the same keys as, like, last time in lecture, so you can open up, like, last time's lecture, get that EMV file, and paste it here. So I'll do that right now, while it's installing.
+
+So I'll go over here to my file panel, and I'll click the plus thingy there.
+
+dot ENV
+
+Beautiful. Empty file, I will go now. I'm going to my folders to find…
+
+Uh, last sections, .env file and paste it here, so sec… Lecture 11.
+
+Their… rag upload.
+
+here we go. So I'm opening my file, I'm copying everything in there, and now I'm pasting it here.
+
+So I got MongoDB URI, that's our same cluster URI.
+
+It's like MongoDB serve, whatever, whatever, username, password, cluster name, whatever, mongoDB.net.
+
+Cool. And then I have Gemini API key, there's my API key. I have now leaked my key to the world, it's on Zoom recorded, so please don't steal my key.
+
+But it's all there. Save it, so…
+
+File… save?
+
+And then close it to make sure it actually saved, so…
+
+Actually, let me copy these key names into your chat, just so you know what to call them, right?
+
+So, a MongoDB URI is one of them.
+
+And then Gemini APIC is the other one.
+
+By the way, you see why I like teaching online? I can copy and paste in the chat all the messages, so it makes life a lot easier for, like, this kind of class.
+
+All right, I'll close that out.
+
+And then… oh, what did Jamie tell me? Onboard Cloud Agents. Ooh, they got new stuff in a cursor.
+
+Maybe another day, not in the middle of class.
+
+Okay, so I've installed my requirements.
+
+I got my .env stuff configured.
+
+Okay, so now, um, I got the right PDF path, it's Harry Potter Collection, that's in there, yup.
+
+I can run it. And remember, I changed my name of the collection to Harry Potter Section 2,
+
+But for you folks, don't touch nothing. Leave that code as it is, make your Harry Potter collection in your rag document database, should be good to go.
+
+All right, and now let's run the code.
+
+So, of course, um, running it, I forgot how, like, ask AI.
+
+Yo, how… remember, asking you how do you run it? Don't make it run it, okay? Just, let's be in some control.
+
+For the time being, how do you run it?
+
+Okay, there is a code, I will paste in the chat.
+
+Save you some tokens, since my tokens being spent to figure that out.
+
+Okay, let me see. I'm in the right directory, yup, I'm in the right folder, .env has Gemini API key, MongoDB URI.
+
+I did that. The PDF exists, data, Harry Potter, complete collection, PDF.
+
+Um, data folder, there's Harry Potter. Yeah, I'm good to go.
+
+So let's paste the command.
+
+And let's run it. In 3…
+
+2… 1… Go!
+
+All right, and now I can take a hit.
+
+Alright, what's happening here? It says, extracting PDF to the text string, cool. Step one is extracting 3,000 pages into a giant string in memory.
+
+Now, it's chunking, chunking is done, now it's…
+
+Connecting to my MongoDB,
+
+cool, connecting away.
+
+And, uh…
+
+Okay, connecting is taking a second or two.
+
+And I got it… fuck me, man. I got an error last time, too. What happened this time?
+
+What happened here?
+
+Uh…
+
+Okay, I got an error, maybe you got one too, I hope you didn't.
+
+Oh, sorry, I didn't put the command in the chat.
+
+Okay, I got an error. This happened last time, too. I don't know… oh, I know what happened.
+
+Okay, let me copy and paste the error so you can see what the error is, and then we'll have a good laugh at me, okay?
+
+So, copying everything…
+
+And I'll paste into the chat.
+
+So again, I don't think you got this error, I got this error, okay? Let's see if AN is why I got this error.
+
+Okay, the error means your MongoDB Atlas has reached its search index limits.
+
+On the free tier, you get a small number. Oh, that sucks.
+
+Yeah, so read the error.
+
+Of course, right? I have, like, 3 indices already created on MongoDB for, like, Harry Potter, that hot dog case, some other thing I'm doing. So I'm on the… whatever tier I'm on and maxed out.
+
+You, however, have no indexes or vector stores on your MongoDB, so you didn't have this error.
+
+So that means I can't actually do it with you, but if I could have done it, it would have, like, run okay.
+
+So, yeah, if anybody in the chat can tell me, are you running it? It's actually embedding the pages bit by bit, like, it's working. Just let me know in the chat.
+
+But yeah, I can't do it because I maxed out my free indexes.
+
+I'll fix it, like, later tonight.
+
+Okay, um… yeah, anybody in the chat, give it a crack.
+
+Should they get a different error, okay?
+
+come by office hours, we'll figure it out. It's probably some stupid thing, or have her…
+
+I have cursor figured out. Yes, can we figure it out, right?
+
+Anybody else have any luck getting it to run?
+
+I mean, I guess I could, like, go in there and delete one of my indices and do it for you.
+
+Um, so you can see how it works. We got, what, 27 minutes?
+
+Um…
+
+Yeah, you know what, I'll take my word for it, the code works. If it's not working, um, just tell me, and we'll go to office hours to figure it out, but this is the basic code, right?
+
+Now, this code works for one PDF file, right? It has one PDF file, one collection name.
+
+If you're smart, you'd go, like, an application where I could drag in a PDF,
+
+Right? And then the AI would figure out, like, what to call the collection, go to my database, create the collection, extract all the things, do all the whole embedding thing, just drag and drop.
+
+So, that'd be a good, like, homework assignment, right? Like, make a drag-and-drop vector store application.
+
+Eh, maybe I'll do it, maybe I won't. You got a couple of homework stuff, I got a thing on to allocate those, but…
+
+The obvious having to build to make your vector store life a lot easier.
+
+Okay, any bells in the chat? Just let me know if it's working, not working, if you're not doing it, then just don't say nothing.
+
+If no one says nothing, I'm gonna assume you're just, like, watching the lecture, you'll do it later on, in which case, I'll move on to the chatbot.
+
+So, yeah, last chance for anyone to pipe up about…
+
+is a working or not working?
+
+Ah, Lydia's working. Okay, someone's just working, so it kind of works.
+
+Awesome.
+
+Alright, so Lydia, since yours is working, um…
+
+I'm guessing it'll create the vector index on your, like, thing?
+
+Uh… we'll see if it works, because when the chatbot runs, if the chatbot has an error, it can't do the rag stuff, that means it didn't create the vector index.
+
+Now, I'll be honest, I asked the AI, like, to create that index, you have to, like, click in the webpage of MongoDB, and it was like…
+
+No, you can do a code.
+
+So, but it says, like, you could do a code for, like, the paid tiers. So Lydia, maybe when you're done, like, putting the documents in there,
+
+You actually can make the vector store. So, actually, you know what?
+
+We got time, let me show you how to create the index, on the database once you, like, create it.
+
+So let me switch my sharing from that to my web browser.
+
+Where is it?
+
+Yeah, I think that's it.
+
+Alright, so we're on the web browser, let's go to MongoDB.
+
+Actually, if we go to MongoDB, I could, like, delete that index and, uh, build it with you folks.
+
+By the way, Lydia, when you're done running it, let me know in the chat, so I can get, like, a timing set sound. 1 or 2 minutes.
+
+Okay, get my two-factor authentication here.
+
+What is the thing?
+
+Okay, so let's go to my, uh, collections…
+
+And… let's see here…
+
+Section 1. Okay, rag docks.
+
+I got Harry Potter, Harry Potter Section 1, Harry Potter Section 2.
+
+Harry Potter has 253 kilobytes.
+
+That's it. Dude, I had the whole book in there, how is it that small?
+
+Well, it has 3,500 documents, if you can read that, so yeah, that's the full thing.
+
+My problem was the vector index, right? I had too many vector indices. Let's go back to my… so, go in the panel here on the left.
+
+Search and Vector Store.
+
+Okay, I have 3 indices. I have rag docks,
+
+Case simulator, Case Nathan's. Okay, Case Nathan I can delete. I don't need that no more, so how do I delete this, uh…
+
+Oh, yeah, Case Nathan's…
+
+Delete index.
+
+drop index…
+
+Is it dropped?
+
+You have reached the three search and vector… yeah. You get 3 on the M0 free tier cluster.
+
+Let's reload the page, and then…
+
+Oh, it's delete ting, see that? Deleting it right now as we speak.
+
+Alright, deleted. So actually, if it deleted it, I should be able to create this, uh… so I'm going back to Cursor now, trying to run the code. You can't see it, but…
+
+I'm trying to call one more time.
+
+And I'll see if I get the same error again.
+
+Yeah, so I need the case simulator.
+
+This is for, like, all my, um… I'm making, like, all the SLM cases AI, like, simulators, like, AI chatbots that do them. I have rags on those, like, case documents, so I need that one.
+
+And then RagDoc is, like, y'all thing?
+
+And then… I want to put an index on the new thing, so I'm letting the code run here.
+
+Just give me a sec.
+
+connecting to MongoDB…
+
+Oh, it's so slow.
+
+Anyways, while I was doing that, let me show you how to create the index, since we're here, right?
+
+Ah, now my code's working. Embedding…
+
+Yeah, it's working.
+
+So I have 70 batches. So, Lydia, you have 70 batches.
+
+Lydia said it took her 3 minutes. Awesome.
+
+Lisa says, could you repeat what an index is?
+
+Yeah, so an index, how do you explain an index?
+
+Index is like a thing you put on a column to allow for fast lookup. So when I want to look up,
+
+you know, here's my query, um…
+
+tell me about pizza, and then make it a vector, right?
+
+So, the factor goes into the index.
+
+It is kind of like a function, right? Goes into your index, and then they go spit back to you, like, the top 10 closest documents to it.
+
+So, it's like a function that does, like, quick lookup, okay? I gotta build it on my columns, or my rows of my database, right? So all those Harry Potter chunks have to be…
+
+index so that I can look up quickly which one's close to me.
+
+All right, so I'm at batch 22.
+
+Um, okay, so while we're doing this, let's make the vector index.
+
+So, how do you do it?
+
+Let me… is it deleted?
+
+Let me reload the page…
+
+Oh, it may already, look at this. See? Rag Docs…
+
+Harry Potter Section 2, right?
+
+Oh, it made it for me, really?
+
+Wow. Okay, good news, people. You don't have to actually do anything in MongoDB's dumb website. The code does it for you.
+
+Thank you, AI. Thank you.
+
+Appreciate it. But let's have a look at it right while we're here, so I'll click the vector index.
+
+embedding is the name of the path.
+
+768 cosine…
+
+Uh… yeah, cool. So that's my vector index.
+
+And it's… if you can see, it's building it now, right? It's, like, 27% index out of 2,000, 26%.
+
+Uh, yeah, it's building it as we speak. So I have one for the…
+
+Harry Potter, and Harry Potter section, too. Awesome.
+
+Um, okay, so yeah, that works just fine, and that's how you put the thing, it looks like it does it automatically.
+
+Um, but it's calling it embedding.
+
+Okay, maybe that's a better name for it. Hopefully the other code of the chatbot knows that, and they'll be fine.
+
+Okay, so that being said, let's, uh…
+
+open up now, cursor again, now let's open it up with the chatbot. So I think we opened up earlier, the instant the cursor, with the chatbot, we did npm install.
+
+If NPM installed, I think the chatbot should work now, once your documents are uploaded to your thing.
+
+Uh, let's see here. I'm up to 60 on my 70 things, so let me stop sharing here.
+
+And now let me open up my cursor with the chatbot.
+
+Alright, so how do I share it?
+
+share over here…
+
+Chat app rag, there we go.
+
+All right. And we're back in the chatbot.
+
+Okay, so again, new code report, right? Let's ask it. Yo!
+
+Tell me how this repo works.
+
+Now, what I gotta do…
+
+to set it up.
+
+to run it.
+
+And again, this is the other repo for the lecture that we cloned earlier. We installed the packages.
+
+All right, what do we do here?
+
+This is a React chatbot for MBA students with Lisa Blackpink AI assistant and a RAG.
+
+over Harry Potter books, okay?
+
+How to run it, we install dependencies, npm install, already did that, took a couple of minutes.
+
+Setup.env.
+
+Okay, so we gotta basically get a React app Gemini API key,
+
+A Gemini API key, a MongoDB URI, or React to have MongoDB URI,
+
+And 11 Labs API key.
+
+Optional. Okay, so there's a bunch of keys here. Basically, you need a key for the MongoDB, and a key for Gemini, okay?
+
+So, let me, uh, get my key for this thing.
+
+So, let's see…
+
+So now I'm in my folder, going to get the key for this thing.
+
+Okay…
+
+drag chat.
+
+dot ENV.
+
+Okay, it's gonna copy everything I have there.
+
+And where's my… I have to make a .env file.
+
+So, .env…
+
+Paste it, and save it.
+
+Okay, so let's just see the keys I got, so you know what's up.
+
+So I have the MongoDB URI, that was the same as last time. Oops, sorry.
+
+Yep. Same as last time.
+
+I'll put in the chat.
+
+Okay? And then I have a Gemini API key.
+
+Okay, and then I have a React DAP Gemini API key.
+
+hey, maybe you're wondering, why do you have two keys of the same thing, right?
+
+Uh, this is me being a bad coder, but what happens is…
+
+React, right, the front end, if it uses a server.env, it has to be called reactApp, and then whatever the key is. So, when you talk to Lisa, Lisa calls Gemini in the front, so she uses ReactAppGemini API key.
+
+Okay? But when you embed the document for the right query, like, hey, tell me about pizza, embed it, that happens in the back of the thing.
+
+If it's a back thing, you can just call it Gemini API key.
+
+Okay? I could have called it just one key react, but I guess I was just, like, coding it
+
+midnight, and I got lazy, so… that's why it's the same key, but two names.
+
+No problem, okay?
+
+The last one here is 11 Labs API Key.
+
+So, this, you can use it. I just wanted Lisa to be, like, talking to me of Harry Potter, so I took my Eleven Labs account, took my Lisa voice, put it in there.
+
+If you want to put, like, voice functionality in your chatbot, just get shown Eleven Labs API key, get a voice ID, and a cursor, like, pop in your voice ID somewhere.
+
+I think the voice IDs are stored where? In the…
+
+We're in the server… services.
+
+Okay, I know where it is, it's somewhere there, but yeah. You can put a voice in your thing, okay?
+
+Alright, so now I got my keys.
+
+And it's called Ian Whoops.
+
+not dot… okay, it's okay, no big deal.
+
+Copy it…
+
+delete that… I didn't call it .env, my bad.
+
+Okay. Dot.
+
+ENV. There we go.
+
+Okay, now it's got the colors, blue and purple, we love. Alright.
+
+All right, so now I got the AENV set up.
+
+Um…
+
+MongoDB Atlas set up, create the database, da-da-da-da-da…
+
+I put the string in there, da-da-da-da-da…
+
+Okay, index called vector index…
+
+Or a rag vectorindex.env,
+
+field embedding… wait, what do I gotta put in there?
+
+Okay, um…
+
+database, the rag docs, collector's Harry Potter, okay, so it should work.
+
+Yeah. Looks like it should work, so let's run it, okay?
+
+Now, to run it, it says they're on npm start,
+
+I'm not gonna do that. I'm gonna run the back and the front, right, to make my life easier, so if I want to change something,
+
+I don't gotta kill the whole thing and rerun it.
+
+Because remember, the front reloads automatically if you change your code, but the back does not.
+
+So better to have, like, separate terminals.
+
+So I'll do that right now.
+
+So let me take cursor here…
+
+And I will make a split terminal. There's, like, the split panel there, see it?
+
+Boom! Two terminals.
+
+Let's, uh, shrink up this thing.
+
+Okay.
+
+So first, I'm gonna run the backend server, right? The backend is the server, so the command is npm
+
+Run… server.
+
+And I'll put that in the chat.
+
+In case your AI won't tell you, or you don't want to pay for the tokens,
+
+Okay, that runs back.
+
+And now, around the fronts. Front is NPM…
+
+NPM…
+
+Uh, run… what was it called?
+
+Oh yeah, the client uses the application, so I'm running the client.
+
+boob.
+
+And I'll put it in the chat.
+
+Okay? And yeah, if you're able to put all your documents into the vector store and put the index on it, and it's called
+
+Rags… what was it called, the collection? The database is RAG Docs?
+
+And the collection was Harry Potter, then this chatbot should work just fine.
+
+You can't make her talk, because you don't have the Lisa ID and stuff, and the 11 Lives API key, but I do, so I can make it talk.
+
+Okay, so let's, um, let's take this AI for a spin and see what happens.
+
+So now I'll stop my sharing.
+
+I will share the web browser, and we'll see how the chatbot works.
+
+There we go.
+
+Alright, we are booting up.
+
+Okay, and we are in!
+
+Okay, so if your chatbot was set up from last time, and you got it to run, then this should all work, okay? And if it doesn't work, we'll fix it in office hours, or your cursor can fix it, right?
+
+So let me log out of here.
+
+Okay, so create account, I create an account, first name, last name, whatever, okay? I already have an account on my MongoDB somewhere.
+
+So I will, uh, just log in.
+
+what's the password? 1, 2, 3, 4, 5…
+
+Nope. What is my password? Again, shout what's the password for this account?
+
+It's either 1, 2, 3, 4, 5, or 11111. I think it's that one. 111111.
+
+Yes, okay, cats are so secure.
+
+Awesome. Okay, let's talk, Elisa. And now, hopefully this will work.
+
+In the last section, I didn't upload, like, the newer code, so it was actually the old code, the social media assistant code.
+
+No rag in there. I pushed the new code before this class started, so now it should work.
+
+Let's find out. Yo.
+
+Okay, let's hear her talk.
+
+Hey Tahid, how's it going? Ready to dive into the magical world of Harry Potter? I'm so excited to share my love for these books with you, what's on your mind?
+
+Uh… oh, where's the voice input?
+
+I didn't put voice input? That sucks. Okay, I have to type.
+
+Okay, so what should I ask you about Harry Potter? Anybody here a Harry Potter fan wanna…
+
+quiz Lisa's knowledge of these books.
+
+Let me know in the chat, or just tell me with your voice.
+
+No Harry Potter fans?
+
+Okay, you know what, I'm gonna do? I'm gonna ask AI for a question to ask… oh.
+
+Who killed Dumbledore? Thank you, Jamil!
+
+Yeah, who'd he kill Dumbledore? I forgot, was it… was it Snape?
+
+Okay.
+
+Okay, so based on the excerpts, it was Snape who cast the Avada Kadavra curse on Dumbledore.
+
+it's, like, super shocking and heartbreaking, especially since Dumbledore was pleading with him right before it happened. Really?
+
+Voldemort claims responsibility, but Harry knows the truth.
+
+And reveals that Dumbledore planned his own death with Snape months in advance. What? It's a really complex situation, and ugh, it gets me every time. Ugh, spoiler alert! Oh my god, man.
+
+Okay, Jameel, is that correct?
+
+And then nursing, you have your query next.
+
+Jamil says, seems so. By the way, how did she answer that question? If you click here,
+
+5 book chunks used.
+
+Click? Yeah, chunk page 2907, 2923,
+
+3598-2912.
+
+Are the pages actually about, like, Snape?
+
+Let me, uh, look up the PDF.
+
+So, Harry Potter PDF…
+
+Yeah, let's check the PDF right now, look.
+
+So, what was the page?
+
+2907.
+
+Okay, first page 2907.
+
+2907.
+
+207-2923.
+
+Is this the page?
+
+If you help me support him, said Harriet, no listening to her, I was thinking we can get him aside. What happened to Dumbledore? Rose Myrta was… what's wrong?
+
+The Dark Mark, Elvis, blah blah.
+
+Ugh, I don't want to read this.
+
+2923, 2923.
+
+Oh, sorry, someone's talking?
+
+I mean, there was… it also mentioned 2923, so Sabra mentioned Ombudoor here, was on 29…
+
+2923?
+
+Yes.
+
+2923…
+
+Uh, actually, you know what? I want y'all to check for me, okay? So there's… if you feel like it, go and poke around. I go back in the chat.
+
+I don't really care, but the pages were 2907, 2923, 3598.
+
+And, uh,
+
+I was type it in there.
+
+2907…
+
+2923…
+
+Uh, 3, 5, 9, 8…
+
+2912…
+
+2891.
+
+By the way, these might be off a little bit, like, if a page couldn't be embedded because there's no text on it, like that picture Harry Potter, maybe it didn't count it, and it counts, like…
+
+It skipped those, like, text pages. So, these might be off by, like, a page or two, but it looked up something.
+
+Actually, I can ask her, what in-page…
+
+2912…
+
+helped you answer my question.
+
+I hope this works.
+
+I didn't actually use page 2912 to answer your question without… about his death. The excerpt is about Quidditch Match, specifically Crumbs, Zoronsky defensive feint.
+
+My anchar escape came from my general knowledge of series, not from any of the excerpts.
+
+What?
+
+Okay, um, tell me more about that page…
+
+2912, then.
+
+Wow, she actually didn't… she knew what happened already.
+
+Okay, Lydia says, my AI doesn't support that. Lydia, do you pay money to Google?
+
+Uh, maybe it's, like, a paid feature or some higher tier professional API feature, just kind of upgrade it. Come to my office hours, I'll figure it out.
+
+Okay, now it says page 2912, based on excerpt 3, the page is about Quidditch World Cup.
+
+Is that true? Page 2912?
+
+29…
+
+Um, is this about Quidditch?
+
+Draco… something?
+
+Maybe it's the wrong page, right?
+
+So I'll be like, it's around here somewhere about Quidditch.
+
+Um, sorry, AI Chat.
+
+Can you, quote,
+
+Uh, something someone said from that page.
+
+Just want to make sure they're actually using the thing to, like, do it.
+
+Hard to know what to believe these days.
+
+Okay, I guess so. Who's Dirk?
+
+He was being skeptical about Harry being the chosen one. Is that true?
+
+hard to know. If I check… if I search here…
+
+Hard…
+
+Do you know…
+
+I found something… where? Where is it?
+
+Bro. Search.
+
+Okay, I can't even searched PDF on, like, the web browser, because it's, like, too big, but the AI can search it.
+
+So, props to us.
+
+All right. Well, I'm gonna assume it's working, so we'll do one more, uh, question.
+
+I think it was, uh, nursing… who was Hermione's boyfriend in Goff?
+
+What is golf?
+
+It's okay, Lisa knows the golf is.
+
+Okay, so based on the excerpts you gave me, uh, it seems like Hermione was spending a lot of time with Victor Crum during the events of The Goblet of Fire.
+
+An excerpt 5, Hermione mentions that Victor asked her to visit him over the summer, and she blushes when she talks about it.
+
+Also, Ron gets super jealous and upset about Hermione fraternizing with the enemy because Victor is from Durmstrang and competing against Harry in Hogwarts. I also noticed in excerpt 2, Ron is clearly annoyed by hermione writing letters to Victor.
+
+From these excerpts, it's pretty clear that Hermione and Victor had something going on.
+
+Uh, Nurson, is that correct?
+
+Heck yeah, Lisa says, how do we test answers or not general knowledge? And we would have been…
+
+Different, if not for the knowledge base. Okay, Lisa, good question.
+
+So, Lisa's got a… not you, Lisa, this Lisa, AI Lisa, has a prompt.
+
+So you can actually, in the prompt, tell her, like, how to, like, answer questions, like, tell me what page it's from, if it uses a page.
+
+So in my hot dog case, uh, case simulator, when Lisa, like, brings up, like, a chart, she tells them what pay the chart's from.
+
+Okay, so eventually you injured the prompt to make her tell you what page she got the data from, or tell her, don't answer any questions for general knowledge,
+
+only answer with the documents you have in the reg. You could design it however you want, but that's just a prompt that you can change, so once you clone the repo and get the basic app running, you can modify
+
+the prompt with the cursor. Okay?
+
+So yeah, awesome, right? We built, like, an AI that can read 3,600 pages,
+
+and find stuff in it, answer our questions. So now your AI can basically read everything in the world.
+
+Uh… Jameel says page 3, 2, 9… yeah, so it's close, right? It lost some paging because of, like,
+
+Like, in the PDF, there's no page number on the page, right? Just, like, whatever? So, it's like, as it goes through the PDF, it's, like, finding stuff.
+
+So yeah, it's close enough, but you can modify that, maybe it's a good homework assignment.
+
+But yeah, there you go, folks. That's how you do a RAG. So, this week, there's no homework, because we've got spring break.
+
+So, on class Thursday, I think we'll cover maybe…
+
+I haven't thought about it yet, but maybe agentic AI, maybe put some AI agents in this kind of, like, rag flow, and maybe do some cool stuff, analyze movies or something, um, some big documents.
+
+How about this? Let's take a book like Harry Potter and write a movie script from the book. So a rag with an agent to make, like, movie scripts.
+
+Wouldn't that be cool? That's someone's job, right? That's a screenwriter's job. Take a book, write a script about it. Let's try that maybe next time in class. I'm not sure if I have time for it, but I'll think about it, but…
+
+Yeah, we'll do agents next time in class, right?
+
+Okay, so that's it for class. Office hours begins now. I'll be heading over to the office hour room, uh, right now, so if you have any questions, we'll see you then. If not, have a good rest of your week, and I'll see y'all on Thursday for Agentic AI.
+
+Yeah, thank you.
+
+Peace out everyone, Gigi's.
+

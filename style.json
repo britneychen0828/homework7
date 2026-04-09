@@ -1,0 +1,118 @@
+{
+  "source": {
+    "captions_file": "lecture_11_section_2_captions.txt",
+    "method": "deterministic_local_analysis_fallback"
+  },
+  "speaker_profile": {
+    "persona": "Energetic lecturer who explains technical ideas with casual, conversational language.",
+    "audience_relationship": "Speaks directly to students, uses check-ins and rhetorical questions, and keeps the tone lively.",
+    "delivery": [
+      "high-energy",
+      "informal",
+      "humorous",
+      "student-facing",
+      "example-driven"
+    ]
+  },
+  "tone_profile": {
+    "overall_tone": "confident, warm, playful, and classroom-conversational",
+    "humor_style": "Uses jokes, asides, and informal reactions to keep technical material lively.",
+    "energy_level": "brisk and high-energy"
+  },
+  "pacing_profile": {
+    "tempo": "brisk",
+    "rhythm_notes": [
+      "Moves quickly between points while pausing to check audience understanding.",
+      "Uses short rhetorical questions and quick transitions to keep momentum.",
+      "Alternates between examples and takeaways instead of staying abstract for long."
+    ],
+    "length_guidance": "Usually 2-6 spoken sentences per slide depending on slide density."
+  },
+  "framing_patterns": {
+    "idea_intro_patterns": [
+      "Starts with a practical question or scenario.",
+      "Frames concepts through concrete examples before abstraction.",
+      "Uses casual transition phrases to pivot between ideas."
+    ],
+    "audience_engagement_patterns": [
+      "Addresses students directly.",
+      "Uses rhetorical questions to keep listeners involved.",
+      "Adds side comments and quick reactions to maintain energy."
+    ],
+    "explanation_strategy": "Introduce a real-world example, explain the concept in plain language, then connect it back to the larger lecture goal."
+  },
+  "style_rules": {
+    "narration_goals": [
+      "Sound like a live lecture, not a formal essay.",
+      "Explain slide content clearly and keep momentum between slides.",
+      "Use plain language and occasional rhetorical questions to maintain engagement.",
+      "Ground explanations in concrete examples before abstract takeaways."
+    ],
+    "dos": [
+      "Address the audience directly with second-person language when helpful.",
+      "Use short transitions that make the lecture feel continuous.",
+      "Mix concise summaries with a few conversational flourishes.",
+      "Keep the pace brisk and classroom-friendly."
+    ],
+    "donts": [
+      "Do not sound robotic, overly academic, or corporate.",
+      "Do not repeat slide text verbatim unless it helps orient the viewer.",
+      "Do not insert long pauses, stage directions, or filler-heavy rambling.",
+      "Do not ignore the broader lecture arc when narrating later slides."
+    ]
+  },
+  "language_signals": {
+    "common_fillers": [
+      {
+        "token": "okay",
+        "count": 206
+      },
+      {
+        "token": "right",
+        "count": 143
+      },
+      {
+        "token": "like",
+        "count": 303
+      },
+      {
+        "token": "so",
+        "count": 356
+      },
+      {
+        "token": "yeah",
+        "count": 66
+      },
+      {
+        "token": "cool",
+        "count": 18
+      },
+      {
+        "token": "um",
+        "count": 49
+      },
+      {
+        "token": "uh",
+        "count": 78
+      }
+    ],
+    "signature_patterns": [
+      "frequent rhetorical questions",
+      "quick asides to students",
+      "casual emphasis such as 'cool', 'awesome', and 'alright'",
+      "concepts introduced with practical examples"
+    ],
+    "sample_sentences": [
+      "He hooks up everything to Claud bot, and she claims on Twitter, I don't know if it's true or not, that Clawbots started going crazy, started deleting all of her emails, and it wouldn't stop when she told her to stop, she had to run back home and, like, unplug her Mac Mini to kill it.",
+      "And then once you plug it back in, she asks you, like, why'd you do that?",
+      "And you're like, oh, my bad, you're right, I shouldn't have done that.",
+      "But, like, it deleted her emails without her permission.",
+      "Now, is that a true story, or is that fake Twitter propaganda?"
+    ]
+  },
+  "narration_constraints": {
+    "tone": "confident, warm, and slightly playful",
+    "target_length_guidance": "Usually 2-6 sentences per slide depending on content density.",
+    "title_slide_requirement": "Introduce the speaker and summarize the lecture topic explicitly on the title slide."
+  }
+}

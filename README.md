@@ -1,95 +1,156 @@
-# Awesome-O
+# Homework 7: Agentic Video Lecture Pipeline
 
-Classroom-scale **screenplay pipeline**: chat agents and batch scripts build **premise → arc → sequences → scenes**, with optional **dialogue repair** and a **rewrite** pass. Outputs are JSON files under a project folder (e.g. `projects/midnight_run_20260401_221032/` — slug from a Gemini-chosen title plus UTC timestamp).
+This repository implements a multi-stage Python pipeline that turns `Lecture_17_AI_screenplays.pdf` into a single narrated `.mp4` lecture video when run locally.
 
-Architecture slides for lecture: **`awesome_o_architecture_slides.html`** (open in a browser).
+The main entrypoint is `run_lecture_pipeline.py`, and the reusable agent code lives under `lecture_agents/`.
 
----
+## Deliverables in this repo
 
-## Requirements
+- `style.json` in the repo root, generated from `lecture_11_section_2_captions.txt` by a style-analysis agent
+- `Lecture_17_AI_screenplays.pdf` in the repo root
+- `run_lecture_pipeline.py` as the end-to-end entrypoint
+- `lecture_agents/` with the stage implementations
+- `projects/` with a sample `project_YYYYMMDD_HHMMSS/` JSON bundle
 
-- **Python 3.11+**
-- **Google Gemini** API access (default model: `gemini-2.5-flash` via pydantic-ai)
+The repository does not commit generated slide images, audio, temp files, or final videos. Those are created locally when the pipeline runs and are ignored by Git.
 
----
+## Pipeline stages
 
-## Environment (`.env`)
+1. `style_agent.py`
+Reads the instructor transcript, calls the text model, and writes `style.json` at the repo root.
 
-Put a **`.env`** file in the **repo root** (next to `requirements.txt`). It is loaded automatically (`python-dotenv`).
+2. `description_agent.py`
+Creates a new `projects/project_YYYYMMDD_HHMMSS/` folder, rasterizes the PDF into `slide_images/slide_001.png`, etc., and generates `slide_description.json`.
 
-| Variable | Notes |
-|----------|--------|
-| **`GEMINI_API_KEY`** | Primary; use your key from Google AI Studio / Gemini API. |
-| **`GOOGLE_API_KEY`** | Alternative name; either works with the Google provider. |
-| **`AWESOME_O_MODEL`** | Optional override, e.g. `google-gla:gemini-2.5-flash`. |
+3. `premise_agent.py`
+Reads the full `slide_description.json` and writes `premise.json`.
 
-Copy **`.env.example`** → `.env` and paste your key. Do not commit `.env`.
+4. `arc_agent.py`
+Reads `premise.json` plus `slide_description.json` and writes `arc.json`.
 
----
+5. `narration_agent.py`
+Uses the current slide image, `style.json`, `premise.json`, `arc.json`, `slide_description.json`, and all prior narrations to write `slide_description_narration.json`.
 
-## Install (repo root)
+6. `tts_agent.py`
+Synthesizes one MP3 per slide into `audio/slide_001.mp3`, etc. Long narration can be chunked and merged back into a single MP3 per slide.
 
-Open a terminal in the **repo root** (the folder that contains `requirements.txt` and `awesome_o/`). Install dependencies:
+7. `video_agent.py`
+Builds one video segment per slide and concatenates them into `Lecture_17_AI_screenplays.mp4` inside the project folder.
+
+## Chaining required by the rubric
+
+The implementation intentionally preserves the required agent context:
+
+- Slide descriptions are generated one slide at a time with the current slide image plus all prior slide descriptions.
+- Narrations are generated one slide at a time with the current slide image plus `style.json`, `premise.json`, `arc.json`, the full `slide_description.json`, and all prior slide narrations.
+- The title slide narration is forced to introduce the speaker and preview the lecture topic.
+
+## Setup
+
+Requirements:
+
+- Python 3.10+
+- `ffmpeg` and `ffprobe` on your `PATH`
+- One supported model provider configured in `.env` or your shell
+
+Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
-Keep running the `run_*.py` scripts from that same root so `import awesome_o` resolves and paths like `projects\…` work.
+Create `.env` in the repo root if you want API-backed generation:
 
----
+```bash
+GEMINI_API_KEY=your_gemini_key
+```
 
-## Agentic flow
+or:
+
+```bash
+OPENAI_API_KEY=your_openai_key
+```
+
+Optional overrides:
+
+```bash
+LECTURE_TEXT_PROVIDER=gemini
+LECTURE_TEXT_MODEL=gemini-2.5-flash
+LECTURE_TTS_PROVIDER=say
+LECTURE_TTS_MODEL=gpt-4o-mini-tts
+LECTURE_TTS_VOICE=alloy
+```
+
+Provider defaults:
+
+- Text generation defaults to OpenAI if `OPENAI_API_KEY` exists, otherwise Gemini if `GEMINI_API_KEY` or `GOOGLE_API_KEY` exists.
+- TTS defaults to OpenAI if `OPENAI_API_KEY` exists, otherwise Gemini if `GEMINI_API_KEY` or `GOOGLE_API_KEY` exists, otherwise macOS `say`.
+
+## Run
+
+Run the full pipeline from the repo root:
+
+```bash
+python3 run_lecture_pipeline.py
+```
+
+Verbose mode:
+
+```bash
+python3 run_lecture_pipeline.py --verbose
+```
+
+Resume an existing project from a later stage:
+
+```bash
+python3 run_lecture_pipeline.py --project-dir project_YYYYMMDD_HHMMSS --start-at audio --verbose
+```
+
+Reuse an existing root `style.json`:
+
+```bash
+python3 run_lecture_pipeline.py --skip-style
+```
+
+## Expected local outputs
+
+Each new run creates:
 
 ```text
-premise.json  →  arc.json  →  sequence.json  →  scenes.json
-     ↑              ↑              ↑                 ↑
-  chat CLI     chat CLI      batch (+opt.      batch (+opt.
-  /generate    /draft …       adaptive plan)    scene_plan)
+projects/project_YYYYMMDD_HHMMSS/
+├── arc.json
+├── audio/
+│   └── slide_001.mp3 ...
+├── Lecture_17_AI_screenplays.mp4
+├── premise.json
+├── slide_description.json
+├── slide_description_narration.json
+└── slide_images/
+    └── slide_001.png ...
 ```
 
-Optional afterward (same project folder):
+This repo includes a sample JSON-only project folder for grading convenience:
 
-1. **`run_fix_scene_dialogue.py`** — Merge mis-typed dialogue in `scenes.json` (deterministic; add `--llm` if needed).
-2. **`run_scenes_rewrite.py`** — New file **`scenes_rewrite.json`**: polish using premise + arc + `sequence.json` + prior scenes in the same sequence (and a tail from the previous sequence). Original `scenes.json` is left unchanged.
+```text
+projects/project_20260409_131907/
+├── arc.json
+├── audio/
+├── premise.json
+├── slide_description.json
+├── slide_description_narration.json
+└── slide_images/
+```
 
----
+## Repository structure
 
-## How to run (class)
-
-From the **repo root**, run **`python run_….py …`**. Each runner forwards **`sys.argv[1:]`** into **`argparse`** inside `awesome_o.cli.*` (use **`python run_….py --help`** for flags).
-
-**Windows:** If double-clicking `.py` opens an editor, run from a terminal: **`python run_….py`**.
-
-| Step | Runner | What it does |
-|------|--------|----------------|
-| 1. Premise | `python run_premise_agent.py` | Chat; `/generate` asks Gemini for a movie-style title, then writes `projects/<title_slug>_<UTC_datetime>/premise.json`. |
-| 2. Arc | `python run_arc_agent.py --project projects\<id>` | Chat; `/draft`, `/edit`, `/show`, `/target`, `/runtime` → `arc.json`. |
-| 3. Sequences | `python run_sequence_agent.py --project projects\<id>` | Writes `sequence.json` (default 8 rows; resumes if the file exists). |
-| 4. Scenes | `python run_scenes_agent.py --project projects\<id>` | Writes `scenes.json` (`--per-sequence` or adaptive plan). |
-| 5. Fix dialogue | `python run_fix_scene_dialogue.py --project projects\<id>` | Fixes `scenes.json` in place; optional `--llm`. |
-| 6. Rewrite | `python run_scenes_rewrite.py --project projects\<id>` | Writes **`scenes_rewrite.json`**. |
-
----
-
-## Package layout (`awesome_o/`)
-
-| Path | Role |
-|------|------|
-| `models/` | Pydantic types for `premise.json`, `arc.json`, `sequence.json`, `scenes.json`, `scene_plan.json`, etc. |
-| `cli/` | Entry points: premise, arc, sequence, scenes, fix_scene_dialogue, scenes_rewrite |
-| `persona.py` | System prompts (Awesome-O voice + structured agents) |
-| `model_settings.py` | `.env` + default Gemini model id |
-| `scene_dialogue_normalize.py` | Rule-based cue+line → `dialogue` merge |
-
----
-
-## Sample data (optional)
-
-- **`projects/terminator_2_20260401_151738/`** — Example JSON from *Terminator 2* (large `scenes.json`). Not produced by the Awesome-O agents; useful as a shape reference.
-
----
-
-## License / course use
-
-Built for MGT575 / class demos; adjust as needed for your syllabus.
+```text
+.
+├── Lecture_17_AI_screenplays.pdf
+├── README.md
+├── lecture_11_section_2_captions.txt
+├── lecture_agents/
+├── projects/
+├── requirements.txt
+├── run_lecture_pipeline.py
+└── style.json
+```

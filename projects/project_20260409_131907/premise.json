@@ -1,0 +1,26 @@
+{
+  "lecture_title": "AI Screenplays: Generating Long Documents with Agentic Flows",
+  "thesis": "A modular, hierarchical 'agentic flow' of specialized AI agents can overcome the 'one-shot' generation challenges (e.g., context drift) inherent in producing long, coherent documents, by systematically building narratives from high-level concepts to granular details.",
+  "scope": "The lecture focuses on building an 'agentic flow' for movie screenplays, demonstrating its detailed implementation through a hierarchical process, and explicitly generalizing this architecture for other long text documents including books, podcasts, and business plans.",
+  "core_premise": "Traditional AI struggles with generating long, coherent documents in a single attempt due to issues like context drift. A structured, multi-agent 'agentic flow' provides a robust solution by breaking down complex creative tasks into hierarchical, context-aware stages.",
+  "learning_objectives": [
+    "Identify the limitations of 'one-shot' AI generation for long-form content.",
+    "Construct a hierarchical 'agentic flow' for structured document creation.",
+    "Apply specialized AI agents (Premise, Arc, Sequence, Scene) to generate a detailed screenplay.",
+    "Implement and understand the role of 'enhancement agents' in refining AI outputs.",
+    "Generalize the agentic flow architecture for diverse long text document types."
+  ],
+  "audience": "AI practitioners, developers, content creators, and technical writers seeking practical methods for generating structured, long-form content with AI.",
+  "key_concepts": [
+    "Agentic Flow",
+    "One-Shot Long-Form Generation",
+    "Context Drift",
+    "Hierarchical Document Generation",
+    "Premise Agent",
+    "Arc Agent",
+    "Sequence Agent",
+    "Scene Agent",
+    "Enhancement Agents"
+  ],
+  "why_it_matters": "This agentic approach unlocks the potential for AI to produce consistently coherent and creative long-form content, significantly advancing automated content generation across entertainment, publishing, and business sectors."
+}

@@ -1,17 +1,13 @@
-# Environment (never commit secrets)
 .env
-
-# Python
+.DS_Store
 __pycache__/
-*.py[cod]
-*.egg-info/
-dist/
-build/
-.eggs/
+*.pyc
 
-# Local one-off scripts (e.g. T2 script → scenes import); not part of Awesome-O package
-tools/
+projects/*/slide_images/*
+projects/*/audio/*
+projects/*/*.mp4
+projects/*/temp/
 
-# Tools / editor
-.ruff_cache/
-*.sublime-workspace
+!projects/.gitkeep
+!projects/*/slide_images/.gitkeep
+!projects/*/audio/.gitkeep
