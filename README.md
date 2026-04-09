@@ -63,11 +63,6 @@ Create `.env` in the repo root:
 
 ```bash
 GEMINI_API_KEY=your_gemini_key
-LECTURE_TEXT_PROVIDER=gemini
-LECTURE_TEXT_MODEL=gemini-2.5-flash
-LECTURE_TTS_PROVIDER=gemini
-LECTURE_TTS_MODEL=gemini-2.5-flash-preview-tts
-LECTURE_TTS_VOICE=kore
 ```
 
 Gemini is the intended provider for this repository. If you do not override the provider variables, the code now prefers Gemini by default whenever `GEMINI_API_KEY` is available.
