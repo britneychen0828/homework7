@@ -97,9 +97,20 @@ def main() -> int:
         if args.skip_style and config.style_path.exists():
             LOGGER.info("Reusing existing %s", config.style_path.name)
             style_profile = read_json(config.style_path)
-        else:
+        elif config.captions_path.exists():
             LOGGER.info("Building %s from %s with the text model", config.style_path.name, config.captions_path.name)
             style_profile = build_style_profile(config.captions_path, config.style_path, client=llm_client)
+        elif config.style_path.exists():
+            LOGGER.warning(
+                "Missing %s, so the pipeline is reusing existing %s.",
+                config.captions_path.name,
+                config.style_path.name,
+            )
+            style_profile = read_json(config.style_path)
+        else:
+            raise PipelineValidationError(
+                f"Missing both captions transcript file ({config.captions_path}) and reusable style profile ({config.style_path})."
+            )
 
         slide_paths = load_or_build_slide_paths(config=config, start_at=args.start_at)
         slide_descriptions = load_or_build_slide_descriptions(
@@ -176,7 +187,10 @@ def main() -> int:
 
 def validate_local_inputs(config: PipelineConfig) -> None:
     require_file(config.pdf_path, "lecture PDF")
-    require_file(config.captions_path, "captions transcript file")
+    if not config.captions_path.exists() and not config.style_path.exists():
+        raise PipelineValidationError(
+            f"Missing both captions transcript file ({config.captions_path}) and style.json ({config.style_path})."
+        )
     require_binary("ffmpeg")
     require_binary("ffprobe")
 
