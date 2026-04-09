@@ -1,6 +1,6 @@
 # Homework 7: Agentic Video Lecture Pipeline
 
-This repository implements a multi-stage Python pipeline that turns `Lecture_17_AI_screenplays.pdf` into a single narrated `.mp4` lecture video when run locally.
+This repository implements a multi-stage Python pipeline that turns `Lecture_17_AI_screenplays.pdf` into a single narrated `.mp4` lecture video when run locally using Gemini for both the agent steps and text-to-speech.
 
 The main entrypoint is `run_lecture_pipeline.py`, and the reusable agent code lives under `lecture_agents/`.
 
@@ -51,7 +51,7 @@ Requirements:
 
 - Python 3.10+
 - `ffmpeg` and `ffprobe` on your `PATH`
-- One supported model provider configured in `.env` or your shell
+- Gemini API access configured in `.env` or your shell
 
 Install dependencies:
 
@@ -59,32 +59,18 @@ Install dependencies:
 python3 -m pip install -r requirements.txt
 ```
 
-Create `.env` in the repo root if you want API-backed generation:
+Create `.env` in the repo root:
 
 ```bash
 GEMINI_API_KEY=your_gemini_key
-```
-
-or:
-
-```bash
-OPENAI_API_KEY=your_openai_key
-```
-
-Optional overrides:
-
-```bash
 LECTURE_TEXT_PROVIDER=gemini
 LECTURE_TEXT_MODEL=gemini-2.5-flash
-LECTURE_TTS_PROVIDER=say
-LECTURE_TTS_MODEL=gpt-4o-mini-tts
-LECTURE_TTS_VOICE=alloy
+LECTURE_TTS_PROVIDER=gemini
+LECTURE_TTS_MODEL=gemini-2.5-flash-preview-tts
+LECTURE_TTS_VOICE=kore
 ```
 
-Provider defaults:
-
-- Text generation defaults to OpenAI if `OPENAI_API_KEY` exists, otherwise Gemini if `GEMINI_API_KEY` or `GOOGLE_API_KEY` exists.
-- TTS defaults to OpenAI if `OPENAI_API_KEY` exists, otherwise Gemini if `GEMINI_API_KEY` or `GOOGLE_API_KEY` exists, otherwise macOS `say`.
+Gemini is the intended provider for this repository. If you do not override the provider variables, the code now prefers Gemini by default whenever `GEMINI_API_KEY` is available.
 
 ## Run
 
